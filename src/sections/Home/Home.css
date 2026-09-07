@@ -1,0 +1,72 @@
+
+.home {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  padding: 40px 8%;
+}
+
+.home-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.intro {
+  flex: 1;
+}
+
+.hello {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.name {
+  font-size: 55px;
+  margin: 0 0 15px;
+}
+
+.role {
+  font-size: 22px;
+  line-height: 1.7;
+}
+
+.description {
+  max-width: 600px;
+  font-size: 17px;
+  line-height: 1.7;
+  margin: 25px 0;
+}
+
+.home-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.home-buttons button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.contact-btn {
+  background: transparent;
+  border: 1px solid #333 !important;
+}
+
+.profile {
+  flex: 0 0 350px;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-image {
+  width: 330px;
+  height: 330px;
+  object-fit: cover;
+  border-radius: 50%;
+}
