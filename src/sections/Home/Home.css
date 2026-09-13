@@ -1,0 +1,90 @@
+.home {
+  min-height: calc(100vh - 70px);
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+  background-color: #ffffff;
+}
+
+.home-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.intro {
+  flex: 1;
+}
+
+.hello {
+  font-size: 20px;
+  margin: 0 0 5px;
+  color: #333;
+}
+
+.name {
+  font-size: 52px;
+  margin: 0 0 15px;
+  color: #222;
+  font-weight: 700;
+}
+
+.role {
+  font-size: 20px;
+  line-height: 1.8;
+  margin: 0;
+  color: #222;
+  font-weight: 600;
+}
+
+.description {
+  max-width: 650px;
+  margin-top: 25px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #333;
+}
+
+.home-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.home-buttons button {
+  padding: 11px 22px;
+  border-radius: 7px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.work-btn {
+  border: none;
+  background-color: #eeeeee;
+  color: #222;
+}
+
+.contact-btn {
+  background-color: white;
+  border: 1px solid #555;
+  color: #222;
+}
+
+.home-buttons button:hover {
+  transform: translateY(-2px);
+}
+
+.profile {
+  flex: 0 0 330px;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-image {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 50%;
+}
