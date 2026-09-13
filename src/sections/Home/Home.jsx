@@ -11,7 +11,7 @@ function Home() {
           <p className="hello">Hello, I'm</p>
 
           <h1 className="name">
-            Ishqa Lafir
+            Ishka Lafir
           </h1>
 
           <h2 className="role">
