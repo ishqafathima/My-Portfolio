@@ -29,7 +29,7 @@ function About() {
 
       <div className="contact-info">
         <p>
-          <strong>Name:</strong> Ishqa Lafir
+          <strong>Name:</strong> Ishka Lafir
         </p>
 
         <p>
