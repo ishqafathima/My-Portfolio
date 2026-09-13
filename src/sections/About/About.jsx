@@ -10,7 +10,7 @@ function About() {
 
   return (
     <div className="section-content">
-      <h2>About Me</h2>
+     
 
       <h2>Who am I?</h2>
 
@@ -33,12 +33,20 @@ function About() {
         </p>
 
         <p>
-          <strong>Email:</strong> your-email@gmail.com
+          <strong>Email:</strong> ishqafathima34@gmail.com
         </p>
 
         <p>
-          <strong>Location:</strong> Sri Lanka
+          <strong>Location:</strong> Weligama,Matara SriLanka
         </p>
+
+        <p>
+          <strong>Phone:</strong> +94 767607224
+        </p>
+
+       <p>
+         <strong>Experience:</strong> Fresher – Seeking Internship
+       </p>
       </div>
 
       <button className="cv-button" onClick={downloadCV}>
