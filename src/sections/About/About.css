@@ -1,40 +1,15 @@
-.section-content {
-  min-height: calc(100vh - 70px);
-  width: 100%;
-  box-sizing: border-box;
-  padding: 70px 10%;
-  background-color: #ffffff !important;
-  color: #222222;
-}
-
-.section-content h2 {
-  font-size: 36px;
-  text-align: center;
-  color: #222222;
-  margin-bottom: 25px;
-}
-
-.section-content p {
-  color: #666666;
-  font-size: 16px;
-  line-height: 1.8;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.cv-button {
+.contact-info {
   margin-top: 25px;
-  padding: 12px 28px;
-  border: none;
-  border-radius: 7px;
-  background-color: #5063c9;
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: 0.3s ease;
+  text-align: left;
 }
 
-.cv-button:hover {
-  background-color: #3f50b0;
+.contact-info p {
+  margin: 10px 0;
+  color: #555;
+  font-size: 16px;
+}
+
+.contact-info strong {
+  color: #5063c9;
+  margin-right: 8px;
 }
