@@ -18,9 +18,9 @@
 /* Technical Skills */
 
 .technical-skills {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 35px 60px;
 }
 
 .skill-category {
