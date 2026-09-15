@@ -1,14 +1,15 @@
 .skills {
-  padding: 100px 20px;
+  padding: 30px 20px 100px;
   background-color: #dff4ff;
 }
 
 .skills .section-content {
   max-width: 1000px;
   margin: 0 auto;
+  min-height: auto;
+  padding: 20px 0;
   text-align: center;
 }
-
 .skills h2 {
   color: #333333;
   font-size: 32px;
