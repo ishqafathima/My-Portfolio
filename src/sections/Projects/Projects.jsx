@@ -7,14 +7,14 @@ function Projects() {
       description:
         "A university community and student support application designed to help students connect, share information, and access useful resources.",
       technologies: ["React Native", "Node.js", "Firebase"],
-      github: "https://github.com/ishqafathima",
+      github: "https://github.com/ishqafathima/MyUniPal-My-Code-Frontend-",
     },
     {
       title: "AI Study Planner",
       description:
         "An AI-powered study planning application that helps students organize their study schedules and manage their learning activities.",
       technologies: ["React.js", "Spring Boot", "AI"],
-      github: "https://github.com/ishqafathima",
+      github: "https://github.com/ishqafathima/AI-Study-Planner",
     },
     {
       title: "Portfolio Website",
