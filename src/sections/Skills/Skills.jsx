@@ -12,6 +12,7 @@ function Skills() {
 
     "Mobile Development": [
       "React Native",
+      "Expo"
     ],
 
     "Backend Development": [
