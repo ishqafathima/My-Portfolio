@@ -1,3 +1,7 @@
+/* =========================
+   Navbar
+========================= */
+
 .navbar {
   width: 100%;
   height: 70px;
@@ -8,7 +12,7 @@
 
   padding: 0 6%;
 
-  background-color: #04072a !important;
+  background-color: #04072a;
 
   position: sticky;
   top: 0;
@@ -23,10 +27,10 @@
   display: block;
   font-size: 24px;
   font-weight: bold;
-  color: #8e2222 !important;
+  color: #ffffff;
 }
 
-/* Navigation */
+/* Navigation Links */
 
 .nav-links {
   display: flex;
@@ -36,12 +40,12 @@
 
 .nav-links a {
   text-decoration: none;
-  color: #ffffff !important;
+  color: #ffffff;
   font-size: 15px;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-  color: #a9c7e8 !important;
+  color: #a9c7e8;
 }
