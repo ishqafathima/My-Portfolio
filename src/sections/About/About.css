@@ -33,7 +33,11 @@
   padding: 12px 25px;
   cursor: pointer;
   background-color: #04072a !important;
-  color: white;
+  color: white !important;
   border: none;
   border-radius: 6px;
+}
+.cv-button:hover {
+  background-color: #1a237e !important;
+  color: white !important;
 }
