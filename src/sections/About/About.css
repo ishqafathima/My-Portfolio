@@ -1,28 +1,35 @@
-.about-section {
+.section-content {
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 80px 20px;
-}
-
-.about-content {
-  max-width: 800px;
-  width: 100%;
   text-align: center;
+  padding: 80px 20px;
+  box-sizing: border-box;
 }
 
-.about-content h2 {
+.section-content h2 {
   margin-bottom: 25px;
 }
 
-.about-content p {
+.section-content > p {
+  max-width: 750px;
   line-height: 1.7;
-  margin-bottom: 20px;
+  margin: 10px auto;
 }
 
-.about-details {
-  margin-top: 30px;
+.contact-info {
+  margin-top: 25px;
   text-align: left;
-  display: inline-block;
+}
+
+.contact-info p {
+  margin: 10px 0;
+}
+
+.cv-button {
+  margin-top: 25px;
+  padding: 12px 25px;
+  cursor: pointer;
 }
