@@ -73,15 +73,15 @@ function Projects() {
         </div>
 
         {/* View All Projects */}
-        <div className="view-all-projects">
-          <a
-            href="https://github.com/ishqafathima?tab=repositories"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View All Projects →
-          </a>
-        </div>
+       <div className="view-all-projects">
+  <a
+    href="https://github.com/ishqafathima?tab=repositories"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    View All Projects →
+  </a>
+</div>
 
       </div>
     </section>
