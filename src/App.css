@@ -1,13 +1,31 @@
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 html {
   scroll-behavior: smooth;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100vh;
 }
 
 body {
   font-family: Arial, sans-serif;
   background-color: #dff4ff;
   color: #222;
+}
+
+/* Main App */
+.app {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #dff4ff;
 }
 
 /* Navbar */
@@ -50,14 +68,16 @@ body {
 /* Sections */
 
 section {
+  width: 100%;
   min-height: 80vh;
   padding: 80px 20px;
-   background-color: #dff4ff;
+  background-color: #dff4ff;
 }
 
 .section-content {
+  width: 100%;
   max-width: 900px;
-  margin: auto;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -70,6 +90,7 @@ section {
 /* Footer */
 
 footer {
+  width: 100%;
   padding: 25px;
   text-align: center;
   background-color: #5063c9;
