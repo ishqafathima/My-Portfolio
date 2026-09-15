@@ -21,7 +21,7 @@ function Projects() {
       description:
         "A personal portfolio website showcasing my skills, projects, experience, and background as a developer and UI/UX designer.",
       technologies: ["React.js", "JavaScript", "CSS"],
-      github: "https://github.com/ishqafathima",
+      github: "https://github.com/ishqafathima/My-Portfolio",
     },
   ];
 
