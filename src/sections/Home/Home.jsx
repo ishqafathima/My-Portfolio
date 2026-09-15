@@ -17,8 +17,8 @@ function Home() {
           <h2 className="role">
             <span>IT Undergraduate</span> |{" "}
             <span>Full-stack Developer</span> |{" "}
-            <span>Mobile Application Developer</span>
-            <span>UI/UX Designer</span> |{" "}
+            <span>Mobile Application Developer</span> |{" "}
+            <span>UI/UX Designer</span> 
             
           </h2>
 
