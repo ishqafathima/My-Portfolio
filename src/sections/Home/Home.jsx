@@ -1,9 +1,7 @@
+
 import "./Home.css";
-import { useNavigate } from "react-router-dom";
 
 function Home() {
-  const navigate = useNavigate();
-
   return (
     <section className="home">
 
@@ -31,13 +29,24 @@ function Home() {
 
           <div className="home-buttons">
 
-            <button className="work-btn">
+            <button
+              className="work-btn"
+              onClick={() =>
+                document.getElementById("projects").scrollIntoView({
+                  behavior: "smooth",
+                })
+              }
+            >
               View My Work
             </button>
 
             <button
               className="contact-btn"
-              onClick={() => navigate("/contact")}
+              onClick={() =>
+                document.getElementById("contact").scrollIntoView({
+                  behavior: "smooth",
+                })
+              }
             >
               Contact Me
             </button>
@@ -49,7 +58,7 @@ function Home() {
         <div className="profile">
           <img
             src="/Ishqa.jpeg"
-            alt="Ishqa Lafir"
+            alt="Ishka Lafir"
             className="profile-image"
           />
         </div>
