@@ -12,33 +12,38 @@
 
 .section-content h2 {
   margin-bottom: 25px;
+  color: #ffffff;
 }
 
 .section-content > p {
   max-width: 750px;
   line-height: 1.7;
   margin: 10px auto;
+  color: #dff4ff;
 }
 
 .contact-info {
   margin-top: 25px;
   text-align: left;
+  color: #dff4ff;
 }
 
 .contact-info p {
   margin: 10px 0;
+  color: #dff4ff;
 }
 
 .cv-button {
   margin-top: 25px;
   padding: 12px 25px;
   cursor: pointer;
-  background-color:  #8e90a9 !important;
-  color: white !important;
+  background-color: #8e90a9 !important;
+  color: #ffffff !important;
   border: none;
   border-radius: 6px;
 }
+
 .cv-button:hover {
-  background-color: #1a237e !important;
-  color: white !important;
+  background-color: #6f7190 !important;
+  color: #ffffff !important;
 }
