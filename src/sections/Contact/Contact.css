@@ -1,68 +1,90 @@
-.contact {
+.home {
   min-height: calc(100vh - 70px);
-  padding: 70px 10%;
-  background-color:  #04072a;
-}
-
-.contact-content {
-  max-width: 700px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.contact-content h1 {
-  font-size: 40px;
-  color: #222;
-  margin-bottom: 10px;
-}
-
-.contact-description {
-  color: #666;
-  font-size: 16px;
-  margin-bottom: 35px;
-  line-height: 1.6;
-}
-
-.contact-form {
   display: flex;
-  flex-direction: column;
-  gap: 18px;
-  text-align: left;
+  align-items: center;
+  padding: 0 10%;
+  background-color: #04072a;
 }
 
-.contact-form input,
-.contact-form textarea {
+.home-content {
   width: 100%;
-  padding: 13px 15px;
-  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.intro {
+  flex: 1;
+}
+
+.hello {
+  font-size: 20px;
+  margin: 0 0 5px;
+  color: #dff4ff;
+}
+
+.name {
+  font-size: 52px;
+  margin: 0 0 15px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.role {
+  font-size: 20px;
+  line-height: 1.8;
+  margin: 0;
+  color: #dff4ff;
+  font-weight: 600;
+}
+
+.description {
+  max-width: 650px;
+  margin-top: 25px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #c9d6e0;
+}
+
+.home-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.home-buttons button {
+  padding: 11px 22px;
   border-radius: 7px;
-  font-size: 15px;
-  font-family: inherit;
-  box-sizing: border-box;
-  outline: none;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-  border-color: #607d9d;
-}
-
-.contact-form textarea {
-  resize: vertical;
-}
-
-.contact-form button {
-  width: fit-content;
-  padding: 12px 25px;
-  border: none;
-  border-radius: 7px;
-  background-color: #222;
-  color: white;
   font-size: 15px;
   cursor: pointer;
-  align-self: center;
 }
 
-.contact-form button:hover {
-  opacity: 0.85;
+.work-btn {
+  border: none;
+  background-color: #dff4ff;
+  color: #04072a;
+}
+
+.contact-btn {
+  background-color: transparent;
+  border: 1px solid #dff4ff;
+  color: #ffffff;
+}
+
+.home-buttons button:hover {
+  transform: translateY(-2px);
+}
+
+.profile {
+  flex: 0 0 330px;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-image {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 50%;
 }
