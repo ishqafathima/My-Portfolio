@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   padding: 0 10%;
-  background-color:  #04072a;
+  background-color: #04072a;
 }
 
 .home-content {
@@ -21,13 +21,13 @@
 .hello {
   font-size: 20px;
   margin: 0 0 5px;
-  color: #5f6f7a;
+  color: #ffffff;
 }
 
 .name {
   font-size: 52px;
   margin: 0 0 15px;
-  color: #04072a;
+  color: #dff4ff;
   font-weight: 700;
 }
 
@@ -35,7 +35,7 @@
   font-size: 20px;
   line-height: 1.8;
   margin: 0;
-  color: #4f5d75;
+  color: #ffffff;
   font-weight: 600;
 }
 
@@ -44,7 +44,7 @@
   margin-top: 25px;
   font-size: 16px;
   line-height: 1.7;
-  color: #5f6f7a;
+  color: #ffffff;
 }
 
 .home-buttons {
@@ -62,14 +62,14 @@
 
 .work-btn {
   border: none;
-  background-color: #04072a;
-  color: white;
+  background-color: #dff4ff;
+  color: #04072a;
 }
 
 .contact-btn {
-  background-color: white;
-  border: 1px solid #555;
-  color: #04072a;
+  background-color: transparent;
+  border: 1px solid #dff4ff;
+  color: #ffffff;
 }
 
 .home-buttons button:hover {
