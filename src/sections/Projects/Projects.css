@@ -109,7 +109,7 @@
 .view-all-projects a {
   display: inline-block;
   padding: 12px 25px;
-  background-color: #04072a;
+  background-color: #888992;
   color: white;
   text-decoration: none;
   border-radius: 6px;
@@ -119,6 +119,6 @@
 }
 
 .view-all-projects a:hover {
-  background-color: #5063c9;
+  background-color: #6f7190;
   color: white;
 }
