@@ -1,90 +1,82 @@
-.home {
+.contact {
   min-height: calc(100vh - 70px);
   display: flex;
   align-items: center;
-  padding: 0 10%;
+  justify-content: center;
+  padding: 70px 10%;
+  box-sizing: border-box;
   background-color: #04072a;
 }
 
-.home-content {
+.contact-content {
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 60px;
+  max-width: 750px;
+  text-align: center;
 }
 
-.intro {
-  flex: 1;
-}
-
-.hello {
-  font-size: 20px;
-  margin: 0 0 5px;
-  color: #dff4ff;
-}
-
-.name {
-  font-size: 52px;
-  margin: 0 0 15px;
+.contact-content h1 {
+  font-size: 42px;
+  margin-bottom: 12px;
   color: #ffffff;
-  font-weight: 700;
 }
 
-.role {
-  font-size: 20px;
-  line-height: 1.8;
-  margin: 0;
+.contact-description {
   color: #dff4ff;
-  font-weight: 600;
-}
-
-.description {
-  max-width: 650px;
-  margin-top: 25px;
   font-size: 16px;
   line-height: 1.7;
-  color: #c9d6e0;
+  margin-bottom: 35px;
 }
 
-.home-buttons {
+.contact-form {
   display: flex;
-  gap: 15px;
-  margin-top: 25px;
+  flex-direction: column;
+  gap: 18px;
+  text-align: left;
 }
 
-.home-buttons button {
-  padding: 11px 22px;
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #5f6f7a;
   border-radius: 7px;
+  background-color: #ffffff;
+  color: #222222;
   font-size: 15px;
-  cursor: pointer;
+  font-family: inherit;
+  box-sizing: border-box;
+  outline: none;
 }
 
-.work-btn {
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #777777;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #dff4ff;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form button {
+  width: fit-content;
+  padding: 12px 25px;
   border: none;
+  border-radius: 7px;
   background-color: #dff4ff;
   color: #04072a;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  align-self: center;
 }
 
-.contact-btn {
-  background-color: transparent;
-  border: 1px solid #dff4ff;
-  color: #ffffff;
-}
-
-.home-buttons button:hover {
+.contact-form button:hover {
+  background-color: #ffffff;
   transform: translateY(-2px);
-}
-
-.profile {
-  flex: 0 0 330px;
-  display: flex;
-  justify-content: center;
-}
-
-.profile-image {
-  width: 280px;
-  height: 280px;
-  object-fit: cover;
-  border-radius: 50%;
+  transition: 0.3s ease;
 }
