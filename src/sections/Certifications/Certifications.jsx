@@ -16,17 +16,17 @@ function Certifications() {
      title: "IEEEXtreme 18.0",
       issuer: "IEEE",
       date: "26th October 2024",
-      team: "Triopartners",
+      team: "ISquad",
       description:
         "Participated in IEEEXtreme 18.0 as a member of Team ISquad, collaborating to solve competitive programming and algorithmic problems within a limited time.",
       pdf: "/Certificates/IEEEXtreme 18.0.pdf",
     },
     {
-      title: "Certification Name",
-      issuer: "Issuing Organization",
-      date: "2025",
-      description: "Short description of the certification.",
-      pdf: null,
+      title: "Introduction to Cybersecurity",
+      issuer: "Cisco Networking Academy",
+      date: "9th August 2025",
+      description: "An introductory cybersecurity course covering basic cybersecurity concepts, online safety, threats, vulnerabilities, and best practices for protecting digital information.",
+      pdf: "/Certificates/Cybersecurity.pdf",
     },
   ];
 
