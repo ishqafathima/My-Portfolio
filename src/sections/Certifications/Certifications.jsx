@@ -69,16 +69,14 @@ function Certifications() {
 
                 <p>{certification.description}</p>
 
-                {certification.pdf && (
-                  <button
-                    className="view-certificate"
-                    onClick={() =>
-                      setSelectedCertificate(certification.pdf)
-                    }
-                  >
-                    View Certificate
-                  </button>
-                )}
+               {certification.pdf && (
+  <button
+    className="view-certificate"
+    onClick={() => window.open(certification.pdf, "_blank")}
+  >
+    View Certificate
+  </button>
+)}
 
               </div>
 
