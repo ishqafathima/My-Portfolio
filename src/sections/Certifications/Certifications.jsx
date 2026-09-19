@@ -1,25 +1,33 @@
+
 import "./Certifications.css";
+import { useState } from "react";
 
 function Certifications() {
+  const [selectedCertificate, setSelectedCertificate] = useState(null);
+
   const certifications = [
     {
       title: "IEEEXtreme 17.0",
-      issuer: "Issuing Organization",
+      issuer: "IEEE",
       date: "29th October 2023",
-       team: "Triopartners",
-  description:"Participated in IEEEXtreme 17.0 as a member of Team Triopartners, collaborating to solve competitive programming and algorithmic problems within a limited time.",
+      team: "Triopartners",
+      description:
+        "Participated in IEEEXtreme 17.0 as a member of Team Triopartners, collaborating to solve competitive programming and algorithmic problems within a limited time.",
+      pdf: "/Certificates/IEEEXtreme 17.0.pdf",
     },
     {
       title: "Certification Name",
       issuer: "Issuing Organization",
       date: "2025",
       description: "Short description of the certification.",
+      image: null,
     },
     {
       title: "Certification Name",
       issuer: "Issuing Organization",
       date: "2025",
       description: "Short description of the certification.",
+      image: null,
     },
   ];
 
@@ -35,6 +43,7 @@ function Certifications() {
         </p>
 
         <div className="certification-grid">
+
           {certifications.map((certification, index) => (
             <div className="certification-card" key={index}>
 
@@ -43,6 +52,7 @@ function Certifications() {
               </div>
 
               <div className="certificate-info">
+
                 <h2>{certification.title}</h2>
 
                 <h3>{certification.issuer}</h3>
@@ -51,18 +61,58 @@ function Certifications() {
                   {certification.date}
                 </span>
 
+                {certification.team && (
+                  <span className="certificate-team">
+                    Team: {certification.team}
+                  </span>
+                )}
+
                 <p>{certification.description}</p>
 
-                <button className="view-certificate">
-                  View Certificate
-                </button>
-              </div>
+                {certification.image && (
+                  <button
+                    className="view-certificate"
+                    onClick={() =>
+                      setSelectedCertificate(certification.image)
+                    }
+                  >
+                    View Certificate
+                  </button>
+                )}
 
+              </div>
             </div>
           ))}
-        </div>
 
+        </div>
       </div>
+
+      {/* Certificate Image Popup */}
+      {selectedCertificate && (
+        <div
+          className="certificate-modal"
+          onClick={() => setSelectedCertificate(null)}
+        >
+          <div
+            className="certificate-modal-content"
+            onClick={(e) => e.stopPropagation()}
+          >
+
+            <button
+              className="close-certificate"
+              onClick={() => setSelectedCertificate(null)}
+            >
+              ×
+            </button>
+
+            <img
+              src={selectedCertificate}
+              alt="Certificate"
+            />
+
+          </div>
+        </div>
+      )}
     </section>
   );
 }
