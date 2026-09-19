@@ -3,10 +3,11 @@ import "./Certifications.css";
 function Certifications() {
   const certifications = [
     {
-      title: "Certification Name",
+      title: "IEEEXtreme 17.0",
       issuer: "Issuing Organization",
-      date: "2026",
-      description: "Short description of the certification.",
+      date: "29th October 2023",
+       team: "Triopartners",
+  description:"Participated in IEEEXtreme 17.0 as a member of Team Triopartners, collaborating to solve competitive programming and algorithmic problems within a limited time.",
     },
     {
       title: "Certification Name",
