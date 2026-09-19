@@ -30,7 +30,7 @@ function App() {
       </section>
 
       <section id="certifications">
-        <Projects />
+        <Certifications />
       </section>
 
       <section id="experience">
