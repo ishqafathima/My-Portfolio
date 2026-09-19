@@ -1,0 +1,154 @@
+.certifications {
+  min-height: calc(100vh - 70px);
+  padding: 70px 8%;
+  background-color: #dff4ff;
+}
+
+.certifications-content {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.certifications-content h1 {
+  text-align: center;
+  font-size: 40px;
+  color: #04072a;
+  margin-bottom: 15px;
+}
+
+.certifications-intro {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 50px;
+  font-size: 17px;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* Certification Grid */
+
+.certification-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+/* Card */
+
+.certification-card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 30px;
+  display: flex;
+  gap: 22px;
+  align-items: flex-start;
+
+  box-shadow: 0 8px 25px rgba(4, 7, 42, 0.08);
+
+  transition: transform 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+.certification-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(4, 7, 42, 0.15);
+}
+
+/* Icon */
+
+.certificate-icon {
+  width: 55px;
+  height: 55px;
+  min-width: 55px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #04072a;
+  border-radius: 12px;
+
+  font-size: 25px;
+}
+
+/* Information */
+
+.certificate-info h2 {
+  margin: 0 0 8px;
+  font-size: 21px;
+  color: #04072a;
+}
+
+.certificate-info h3 {
+  margin: 0 0 8px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #555;
+}
+
+.certificate-date {
+  display: inline-block;
+  font-size: 14px;
+  color: #04072a;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.certificate-info p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 18px;
+}
+
+/* Button */
+
+.view-certificate {
+  padding: 9px 17px;
+  border: none;
+  border-radius: 7px;
+
+  background-color: #04072a;
+  color: white;
+
+  font-size: 14px;
+  cursor: pointer;
+
+  transition: background-color 0.3s ease;
+}
+
+.view-certificate:hover {
+  background-color: #151a55;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+  .certifications {
+    padding: 60px 5%;
+  }
+
+  .certification-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .certifications-content h1 {
+    font-size: 34px;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .certification-card {
+    flex-direction: column;
+  }
+
+  .certificate-icon {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+  }
+
+}
