@@ -1,10 +1,7 @@
 
 import "./Certifications.css";
-import { useState } from "react";
 
 function Certifications() {
-  const [selectedCertificate, setSelectedCertificate] = useState(null);
-
   const certifications = [
     {
       title: "IEEEXtreme 17.0",
@@ -69,14 +66,16 @@ function Certifications() {
 
                 <p>{certification.description}</p>
 
-               {certification.pdf && (
-  <button
-    className="view-certificate"
-    onClick={() => window.open(certification.pdf, "_blank")}
-  >
-    View Certificate
-  </button>
-)}
+                {certification.pdf && (
+                  <a
+                    href={certification.pdf}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="view-certificate"
+                  >
+                    View Certificate
+                  </a>
+                )}
 
               </div>
 
@@ -85,40 +84,8 @@ function Certifications() {
 
         </div>
       </div>
-
-      {/* PDF Popup */}
-      {selectedCertificate && (
-        <div
-          className="certificate-modal"
-          onClick={() => setSelectedCertificate(null)}
-        >
-
-          <div
-            className="certificate-modal-content"
-            onClick={(e) => e.stopPropagation()}
-          >
-
-            <button
-              className="close-certificate"
-              onClick={() => setSelectedCertificate(null)}
-            >
-              ×
-            </button>
-
-            <iframe
-              src={selectedCertificate}
-              title="Certificate PDF"
-              className="certificate-pdf"
-            />
-
-          </div>
-
-        </div>
-      )}
-
     </section>
   );
 }
 
 export default Certifications;
-

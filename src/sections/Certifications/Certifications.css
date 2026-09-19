@@ -152,22 +152,23 @@
   }
   
   
-.view-certificate {
-  margin-top: 15px;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 8px;
-  background-color: #04072a;
-  color: white;
-  font-size: 14px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.view-certificate:hover {
+.view-certificate { 
+  display: inline-block;
+   margin-top: 15px; 
+   padding: 10px 20px; 
+   border: none; 
+   border-radius: 8px;
+    background-color: #04072a;
+     color: white; 
+     font-size: 14px;
+      text-decoration: none;
+       cursor: pointer; 
+       transition: 0.3s; 
+      } 
+.view-certificate:hover { 
   background-color: #1b3a8a;
-  transform: translateY(-2px);
-}
+   transform: translateY(-2px); 
+  }
 
 /* PDF Popup */
 
