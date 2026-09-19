@@ -81,6 +81,7 @@ function Certifications() {
                 )}
 
               </div>
+
             </div>
           ))}
 
@@ -93,6 +94,7 @@ function Certifications() {
           className="certificate-modal"
           onClick={() => setSelectedCertificate(null)}
         >
+
           <div
             className="certificate-modal-content"
             onClick={(e) => e.stopPropagation()}
@@ -107,11 +109,12 @@ function Certifications() {
 
             <iframe
               src={selectedCertificate}
-              title="Certificate"
+              title="Certificate PDF"
               className="certificate-pdf"
             />
 
           </div>
+
         </div>
       )}
 
@@ -120,3 +123,4 @@ function Certifications() {
 }
 
 export default Certifications;
+
