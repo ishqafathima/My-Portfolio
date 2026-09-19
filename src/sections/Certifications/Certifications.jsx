@@ -28,6 +28,20 @@ function Certifications() {
       description: "An introductory cybersecurity course covering basic cybersecurity concepts, online safety, threats, vulnerabilities, and best practices for protecting digital information.",
       pdf: "/Certificates/Cybersecurity.pdf",
     },
+    {
+      title: "JavaScript Essentials 1",
+      issuer: "Cisco Networking Academy",
+      date: "7th April 2025",
+      description: "An introductory JavaScript course covering fundamental programming concepts, variables, data types, operators, functions, control flow, and basic JavaScript programming techniques.",
+      pdf: "/Certificates/JavaScript_Essentials_1.pdf",
+    },
+    {
+      title: "JavaScript Essentials 2",
+      issuer: "Cisco Networking Academy",
+      date: "24th June 2025",
+      description: "An intermediate JavaScript course covering advanced programming concepts, objects, arrays, functions, error handling, and modern JavaScript programming techniques.",
+      pdf: "/Certificates/JavaScript_Essentials_2.pdf",
+    },
   ];
 
   return (
