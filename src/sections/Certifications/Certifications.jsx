@@ -13,11 +13,13 @@ function Certifications() {
       pdf: "/Certificates/IEEEXtreme 17.0.pdf",
     },
     {
-      title: "Certification Name",
-      issuer: "Issuing Organization",
-      date: "2025",
-      description: "Short description of the certification.",
-      pdf: null,
+     title: "IEEEXtreme 18.0",
+      issuer: "IEEE",
+      date: "26th October 2024",
+      team: "Triopartners",
+      description:
+        "Participated in IEEEXtreme 18.0 as a member of Team ISquad, collaborating to solve competitive programming and algorithmic problems within a limited time.",
+      pdf: "/Certificates/IEEEXtreme 18.0.pdf",
     },
     {
       title: "Certification Name",
