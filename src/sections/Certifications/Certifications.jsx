@@ -13,21 +13,21 @@ function Certifications() {
       team: "Triopartners",
       description:
         "Participated in IEEEXtreme 17.0 as a member of Team Triopartners, collaborating to solve competitive programming and algorithmic problems within a limited time.",
-      pdf: "/Certificates/IEEEXtreme 1",
+      pdf: "/Certificates/IEEEXtreme 17.0.pdf",
     },
     {
       title: "Certification Name",
       issuer: "Issuing Organization",
       date: "2025",
       description: "Short description of the certification.",
-      image: null,
+      pdf: null,
     },
     {
       title: "Certification Name",
       issuer: "Issuing Organization",
       date: "2025",
       description: "Short description of the certification.",
-      image: null,
+      pdf: null,
     },
   ];
 
@@ -69,11 +69,11 @@ function Certifications() {
 
                 <p>{certification.description}</p>
 
-                {certification.image && (
+                {certification.pdf && (
                   <button
                     className="view-certificate"
                     onClick={() =>
-                      setSelectedCertificate(certification.image)
+                      setSelectedCertificate(certification.pdf)
                     }
                   >
                     View Certificate
@@ -87,7 +87,7 @@ function Certifications() {
         </div>
       </div>
 
-      {/* Certificate Image Popup */}
+      {/* PDF Popup */}
       {selectedCertificate && (
         <div
           className="certificate-modal"
@@ -105,14 +105,16 @@ function Certifications() {
               ×
             </button>
 
-            <img
+            <iframe
               src={selectedCertificate}
-              alt="Certificate"
+              title="Certificate"
+              className="certificate-pdf"
             />
 
           </div>
         </div>
       )}
+
     </section>
   );
 }
