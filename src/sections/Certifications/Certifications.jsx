@@ -13,7 +13,7 @@ function Certifications() {
       team: "Triopartners",
       description:
         "Participated in IEEEXtreme 17.0 as a member of Team Triopartners, collaborating to solve competitive programming and algorithmic problems within a limited time.",
-      pdf: "/Certificates/IEEEXtreme 17.0.pdf",
+      pdf: "/Certificates/IEEEXtreme 1",
     },
     {
       title: "Certification Name",
