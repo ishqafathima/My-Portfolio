@@ -235,5 +235,9 @@
   background: #1b3a8a;
 }
 
-
+.certificate-date,
+.certificate-team {
+  display: block;
+  margin-bottom: 8px;
+}
 }
