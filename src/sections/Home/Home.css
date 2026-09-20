@@ -1,21 +1,40 @@
+
+/* =========================
+   HOME
+========================= */
+
 .home {
   min-height: calc(100vh - 70px);
   display: flex;
   align-items: center;
-  padding: 0 10%;
+  padding: 60px 10%;
   background-color: #04072a;
+  box-sizing: border-box;
 }
+
+/* =========================
+   HOME CONTENT
+========================= */
 
 .home-content {
   width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   gap: 60px;
 }
 
+/* =========================
+   INTRO
+========================= */
+
 .intro {
   flex: 1;
+  min-width: 0;
 }
 
 .hello {
@@ -25,14 +44,14 @@
 }
 
 .name {
-  font-size: 52px;
+  font-size: clamp(38px, 5vw, 52px);
   margin: 0 0 15px;
   color: #dff4ff;
   font-weight: 700;
 }
 
 .role {
-  font-size: 20px;
+  font-size: clamp(16px, 2vw, 20px);
   line-height: 1.8;
   margin: 0;
   color: #ffffff;
@@ -47,10 +66,15 @@
   color: #ffffff;
 }
 
+/* =========================
+   BUTTONS
+========================= */
+
 .home-buttons {
   display: flex;
   gap: 15px;
   margin-top: 25px;
+  flex-wrap: wrap;
 }
 
 .home-buttons button {
@@ -58,6 +82,7 @@
   border-radius: 7px;
   font-size: 15px;
   cursor: pointer;
+  transition: 0.3s ease;
 }
 
 .work-btn {
@@ -76,6 +101,10 @@
   transform: translateY(-2px);
 }
 
+/* =========================
+   PROFILE
+========================= */
+
 .profile {
   flex: 0 0 330px;
   display: flex;
@@ -87,4 +116,148 @@
   height: 280px;
   object-fit: cover;
   border-radius: 50%;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+  .home {
+    min-height: calc(100vh - 65px);
+    padding: 60px 7%;
+  }
+
+  .home-content {
+    gap: 35px;
+  }
+
+  .profile {
+    flex: 0 0 250px;
+  }
+
+  .profile-image {
+    width: 230px;
+    height: 230px;
+  }
+
+  .description {
+    font-size: 15px;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+  .home {
+    min-height: calc(100vh - 60px);
+    padding: 50px 6%;
+  }
+
+  .home-content {
+    flex-direction: column-reverse;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .intro {
+    width: 100%;
+  }
+
+  .hello {
+    font-size: 18px;
+  }
+
+  .name {
+    font-size: 40px;
+    margin-bottom: 12px;
+  }
+
+  .role {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .description {
+    max-width: 100%;
+    margin: 20px auto 0;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .home-buttons {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .home-buttons button {
+    padding: 10px 18px;
+    font-size: 14px;
+  }
+
+  .profile {
+    flex: none;
+  }
+
+  .profile-image {
+    width: 210px;
+    height: 210px;
+  }
+}
+
+
+/* =========================
+   SMALL PHONES
+========================= */
+
+@media (max-width: 480px) {
+
+  .home {
+    padding: 40px 5%;
+  }
+
+  .home-content {
+    gap: 25px;
+  }
+
+  .hello {
+    font-size: 16px;
+  }
+
+  .name {
+    font-size: 34px;
+  }
+
+  .role {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  .description {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-top: 18px;
+  }
+
+  .home-buttons {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .home-buttons button {
+    width: 180px;
+  }
+
+  .profile-image {
+    width: 180px;
+    height: 180px;
+  }
 }
