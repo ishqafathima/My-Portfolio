@@ -1,64 +1,250 @@
+
+/* =========================
+   SKILLS SECTION
+========================= */
+
 .skills {
-  padding: 30px 20px 100px;
+  padding: 80px 8% 100px;
   background-color: #04072a;
+  box-sizing: border-box;
 }
+
+
+/* =========================
+   CONTENT
+========================= */
 
 .skills .section-content {
+  width: 100%;
   max-width: 1000px;
+
   margin: 0 auto;
+
   min-height: auto;
-  padding: 20px 0;
+
+  padding: 0;
+
   text-align: center;
 }
+
+
+/* =========================
+   HEADINGS
+========================= */
+
 .skills h2 {
   color: #ffffff;
-  font-size: 32px;
-  margin-bottom: 40px;
+
+  font-size: clamp(28px, 4vw, 36px);
+
+  margin: 0 0 40px;
 }
 
-/* Technical Skills */
+
+/* =========================
+   TECHNICAL SKILLS
+========================= */
 
 .technical-skills {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 35px 60px;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 40px 60px;
 }
+
+
+/* =========================
+   SKILL CATEGORY
+========================= */
 
 .skill-category {
   text-align: left;
+
+  min-width: 0;
 }
 
 .skill-category h3 {
   color: #5063c9;
+
   font-size: 20px;
-  margin-bottom: 15px;
+
+  margin: 0 0 15px;
 }
+
+
+/* =========================
+   SKILL LIST
+========================= */
 
 .skills-list {
   display: flex;
+
   flex-wrap: wrap;
+
   gap: 12px;
 }
 
+
+/* =========================
+   SKILL ITEM
+========================= */
+
 .skill-item {
   padding: 10px 18px;
+
   background-color: #f4f6ff;
+
   color: #5063c9;
+
   border: 1px solid #dfe3ff;
+
   border-radius: 8px;
+
   font-size: 15px;
+
   font-weight: 500;
+
   transition: all 0.3s ease;
+
+  max-width: 100%;
+
+  box-sizing: border-box;
 }
 
 .skill-item:hover {
   background-color: #5063c9;
+
   color: #ffffff;
+
   transform: translateY(-3px);
 }
 
-/* Soft Skills */
+
+/* =========================
+   SOFT SKILLS
+========================= */
 
 .soft-skills-title {
-  margin-top: 60px;
+  margin-top: 65px !important;
+
+  margin-bottom: 30px !important;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+  .skills {
+    padding: 70px 7% 90px;
+  }
+
+  .technical-skills {
+    gap: 35px 35px;
+  }
+
+  .skill-category h3 {
+    font-size: 18px;
+  }
+
+  .skill-item {
+    padding: 9px 15px;
+    font-size: 14px;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+  .skills {
+    padding: 60px 6% 80px;
+  }
+
+  .skills .section-content {
+    width: 100%;
+  }
+
+  .skills h2 {
+    font-size: 30px;
+
+    margin-bottom: 30px;
+  }
+
+  /* One category per row */
+  .technical-skills {
+    grid-template-columns: 1fr;
+
+    gap: 30px;
+  }
+
+  .skill-category {
+    text-align: center;
+  }
+
+  .skill-category h3 {
+    font-size: 18px;
+
+    margin-bottom: 13px;
+  }
+
+  .skills-list {
+    justify-content: center;
+
+    gap: 10px;
+  }
+
+  .skill-item {
+    padding: 9px 14px;
+
+    font-size: 14px;
+  }
+
+  .soft-skills-title {
+    margin-top: 50px !important;
+  }
+}
+
+
+/* =========================
+   SMALL PHONES
+========================= */
+
+@media (max-width: 480px) {
+
+  .skills {
+    padding: 50px 5% 70px;
+  }
+
+  .skills h2 {
+    font-size: 27px;
+
+    margin-bottom: 25px;
+  }
+
+  .technical-skills {
+    gap: 27px;
+  }
+
+  .skill-category h3 {
+    font-size: 17px;
+  }
+
+  .skill-item {
+    padding: 8px 12px;
+
+    font-size: 13px;
+
+    border-radius: 7px;
+  }
+
+  .soft-skills-title {
+    margin-top: 45px !important;
+  }
 }
