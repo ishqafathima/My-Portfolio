@@ -45,11 +45,11 @@ function Contact() {
           message: "",
         });
       } else {
-        setStatus("Something went wrong. Please try again.");
+        setStatus("Failed to send message.");
       }
     } catch (error) {
-      console.error("Error sending message:", error);
-      setStatus("Unable to connect to the server.");
+      console.error("Error:", error);
+      setStatus("Unable to connect to server.");
     } finally {
       setLoading(false);
     }
@@ -61,7 +61,11 @@ function Contact() {
 
         <h1>Contact Me</h1>
 
-        <form onSubmit={handleSubmit}>
+        <p className="contact-description">
+          Have a question or want to work together? Send me a message.
+        </p>
+
+        <form className="contact-form" onSubmit={handleSubmit}>
 
           <input
             type="text"
@@ -116,5 +120,3 @@ function Contact() {
 }
 
 export default Contact;
-
-
