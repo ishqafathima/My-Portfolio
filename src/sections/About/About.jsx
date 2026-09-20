@@ -1,4 +1,6 @@
+
 import "./About.css";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 function About() {
   const downloadCV = () => {
@@ -10,7 +12,6 @@ function About() {
 
   return (
     <div className="section-content">
-     
 
       <h2>Who am I?</h2>
 
@@ -28,6 +29,7 @@ function About() {
       </p>
 
       <div className="contact-info">
+
         <p>
           <strong>Name:</strong> Ishka Lafir
         </p>
@@ -37,21 +39,46 @@ function About() {
         </p>
 
         <p>
-          <strong>Location:</strong> Weligama,Matara SriLanka
+          <strong>Location:</strong> Weligama, Matara, Sri Lanka
         </p>
 
         <p>
           <strong>Phone:</strong> +94 767607224
         </p>
 
-       <p>
-         <strong>Experience:</strong> Fresher – Seeking Internship
-       </p>
+        <p>
+          <strong>Experience:</strong> Fresher – Seeking Internship
+        </p>
+
+      </div>
+
+      {/* Social Links */}
+      <div className="social-links">
+
+        <a
+          href="https://github.com/ishqafathima"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub"
+        >
+          <FaGithub />
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/ishqalafir/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
+        >
+          <FaLinkedin />
+        </a>
+
       </div>
 
       <button className="cv-button" onClick={downloadCV}>
         Download CV
       </button>
+
     </div>
   );
 }
