@@ -8,8 +8,8 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
-
   margin-top: 20px;
+  margin-bottom: 0;
 }
 
 .social-links a {
@@ -20,23 +20,65 @@
   align-items: center;
   justify-content: center;
 
-  color: #ffffff;
+  color: #ffffff !important;
+  background: transparent !important;
 
   font-size: 26px;
-
   text-decoration: none;
 
-  transition: 0.3s ease;
+  padding: 0;
+  border: none;
+
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .social-links a:hover {
-  color: #dff4ff;
+  color: #dff4ff !important;
+  background: transparent !important;
   transform: translateY(-3px);
 }
 
 
 /* =========================
-   MOBILE
+   CV BUTTON
+========================= */
+
+.cv-button {
+  display: block;
+
+  width: 180px;
+  height: 45px;
+
+  margin: 25px auto 0;
+  padding: 0;
+
+  background-color: #8e90a9 !important;
+  color: #ffffff !important;
+
+  border: none;
+  border-radius: 6px;
+
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 600;
+
+  text-align: center;
+
+  cursor: pointer;
+
+  transition: background-color 0.3s ease,
+              transform 0.3s ease;
+}
+
+.cv-button:hover {
+  background-color: #6f7190 !important;
+  color: #ffffff !important;
+  transform: translateY(-2px);
+}
+
+
+/* =========================
+   SMALL PHONES
 ========================= */
 
 @media (max-width: 480px) {
@@ -52,4 +94,10 @@
     font-size: 24px;
   }
 
+  .cv-button {
+    width: 180px;
+    height: 43px;
+    font-size: 14px;
+    margin-top: 22px;
+  }
 }
