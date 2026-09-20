@@ -91,6 +91,19 @@
   transform: translateY(-2px);
 }
 
+.contact-form button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Status Message */
+.contact-status {
+  margin-top: 20px;
+  color: #dff4ff;
+  font-size: 15px;
+}
+
 /* Tablet */
 @media (max-width: 900px) {
   .contact {
