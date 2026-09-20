@@ -1,0 +1,25 @@
+
+footer {
+  width: 100%;
+  padding: 20px 5%;
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+@media (max-width: 480px) {
+  footer {
+    padding: 16px 5%;
+  }
+
+  footer p {
+    font-size: 12px;
+  }
+}

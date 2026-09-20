@@ -1,3 +1,4 @@
+
 import Navbar from "./components/Navbar";
 
 import Home from "./sections/Home/Home";
@@ -7,6 +8,7 @@ import Projects from "./sections/Projects/Projects";
 import Certifications from "./sections/Certifications/Certifications";
 import Experience from "./sections/Experience/Experience";
 import Contact from "./sections/Contact/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -40,6 +42,8 @@ function App() {
       <section id="contact">
         <Contact />
       </section>
+
+      <Footer />
     </>
   );
 }
