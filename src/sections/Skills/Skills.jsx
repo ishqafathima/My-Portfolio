@@ -16,7 +16,6 @@ import {
   SiGithub,
   SiPostman,
   SiFigma,
-  SiAxure,
 } from "react-icons/si";
 
 function Skills() {
