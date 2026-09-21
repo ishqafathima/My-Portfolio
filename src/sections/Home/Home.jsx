@@ -8,11 +8,17 @@ function Home() {
         {/* LEFT CONTENT */}
         <div className="intro">
 
-          <span className="home-label">WELCOME TO MY PORTFOLIO</span>
+          <span className="home-label">
+            WELCOME TO MY PORTFOLIO
+          </span>
 
-          <p className="hello">Hello, I'm</p>
+          <p className="hello">
+            Hello, I'm
+          </p>
 
-          <h1 className="name">Fathima Ishka</h1>
+          <h1 className="name">
+            Fathima Ishka
+          </h1>
 
           <h2 className="role">
             <span>Full-stack Developer</span>
@@ -61,15 +67,28 @@ function Home() {
 
           <div className="profile-frame">
 
-            <img
-              src="/Ishqa.jpeg"
-              alt="Fathima Ishka"
-              className="profile-image"
-            />
+            <div className="profile-top">
+              <span>PROFILE</span>
+              <span>IT • DESIGN • DEVELOPMENT</span>
+            </div>
+
+            <div className="profile-image-wrapper">
+              <img
+                src="/Ishqa.jpeg"
+                alt="Fathima Ishka"
+                className="profile-image"
+              />
+            </div>
 
             <div className="profile-caption">
-              <span>FATHIMA ISHKA</span>
-              <span>DEVELOPER & DESIGNER</span>
+
+              <div className="profile-name">
+                <span>FATHIMA ISHKA</span>
+                <small>FULL-STACK DEVELOPER</small>
+              </div>
+
+              <div className="profile-line"></div>
+
             </div>
 
           </div>

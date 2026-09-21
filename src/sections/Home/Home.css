@@ -259,23 +259,20 @@
 ========================= */
 
 .profile-frame {
-  position: relative;
-
-  width: 330px;
+  width: 350px;
 
   padding: 20px;
 
   box-sizing: border-box;
 
-  /* Different from page background */
   background-color: #080c35;
 
   border: 1px solid rgba(142, 144, 169, 0.22);
 
-  border-radius: 14px;
+  border-radius: 16px;
 
   box-shadow:
-    0 15px 40px rgba(0, 0, 0, 0.18);
+    0 18px 45px rgba(0, 0, 0, 0.2);
 
   transition:
     transform 0.4s ease,
@@ -284,12 +281,72 @@
 }
 
 .profile-frame:hover {
-  transform: translateY(-6px);
+  transform: translateY(-7px);
 
-  border-color: rgba(142, 144, 169, 0.5);
+  border-color: rgba(142, 144, 169, 0.45);
 
   box-shadow:
-    0 20px 45px rgba(0, 0, 0, 0.3);
+    0 25px 55px rgba(0, 0, 0, 0.3);
+}
+
+
+/* =========================
+   PROFILE TOP
+========================= */
+
+.profile-top {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 15px;
+
+  margin-bottom: 16px;
+
+  padding-bottom: 12px;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.profile-top span:first-child {
+  color: #ffffff;
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+.profile-top span:last-child {
+  color: #68708e;
+
+  font-size: 7px;
+
+  font-weight: 600;
+
+  letter-spacing: 1px;
+
+  text-align: right;
+}
+
+
+/* =========================
+   PROFILE IMAGE WRAPPER
+========================= */
+
+.profile-image-wrapper {
+  position: relative;
+
+  width: 100%;
+
+  overflow: hidden;
+
+  border-radius: 11px;
+
+  background-color: #04072a;
 }
 
 
@@ -306,19 +363,17 @@
 
   object-fit: cover;
 
-  border-radius: 10px;
-
-  filter: saturate(0.95);
+  filter: saturate(0.92);
 
   transition:
-    transform 0.4s ease,
-    filter 0.4s ease;
+    transform 0.5s ease,
+    filter 0.5s ease;
 }
 
 .profile-frame:hover .profile-image {
-  transform: scale(1.02);
+  transform: scale(1.025);
 
-  filter: saturate(1.05);
+  filter: saturate(1);
 }
 
 
@@ -329,26 +384,39 @@
 .profile-caption {
   display: flex;
 
-  align-items: center;
+  align-items: flex-end;
 
   justify-content: space-between;
 
-  gap: 10px;
+  gap: 20px;
 
-  padding-top: 17px;
+  padding-top: 18px;
 }
 
-.profile-caption span:first-child {
+
+/* =========================
+   PROFILE NAME
+========================= */
+
+.profile-name {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+.profile-name span {
   color: #ffffff;
 
-  font-size: 10px;
+  font-size: 12px;
 
   font-weight: 700;
 
   letter-spacing: 1.5px;
 }
 
-.profile-caption span:last-child {
+.profile-name small {
   color: #8e90a9;
 
   font-size: 8px;
@@ -356,8 +424,21 @@
   font-weight: 600;
 
   letter-spacing: 1px;
+}
 
-  text-align: right;
+
+/* =========================
+   PROFILE LINE
+========================= */
+
+.profile-line {
+  width: 45px;
+
+  height: 1px;
+
+  margin-bottom: 5px;
+
+  background-color: #8e90a9;
 }
 
 
@@ -388,7 +469,7 @@
   }
 
   .profile-frame {
-    width: 290px;
+    width: 300px;
   }
 }
 
@@ -464,9 +545,17 @@
   }
 
   .profile-frame {
-    width: 260px;
+    width: 270px;
 
     padding: 17px;
+  }
+
+  .profile-top {
+    margin-bottom: 13px;
+  }
+
+  .profile-caption {
+    padding-top: 15px;
   }
 }
 
@@ -486,7 +575,7 @@
   }
 
   .profile-frame {
-    width: 220px;
+    width: 230px;
 
     padding: 14px;
   }
@@ -527,12 +616,20 @@
     justify-content: center;
   }
 
-  .profile-caption span:first-child {
+  .profile-top span:first-child {
     font-size: 8px;
   }
 
-  .profile-caption span:last-child {
-    font-size: 7px;
+  .profile-top span:last-child {
+    font-size: 6px;
+  }
+
+  .profile-name span {
+    font-size: 9px;
+  }
+
+  .profile-name small {
+    font-size: 6px;
   }
 }
 
@@ -548,7 +645,7 @@
   }
 
   .profile-frame {
-    width: 190px;
+    width: 200px;
   }
 
   .name {
@@ -566,4 +663,5 @@
   .home-buttons button {
     width: 175px;
   }
+
 }
