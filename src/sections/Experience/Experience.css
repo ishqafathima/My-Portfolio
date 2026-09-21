@@ -1,3 +1,7 @@
+/* =========================
+   EXPERIENCE SECTION
+========================= */
+
 .experience {
   min-height: 100vh;
   padding: 100px 8%;
@@ -73,10 +77,11 @@
 
   width: 100%;
   padding: 28px;
-
   box-sizing: border-box;
 
-  background-color: rgba(255, 255, 255, 0.035);
+  /* SAME COLOR AS PROJECTS / SKILLS / CERTIFICATIONS */
+  background-color: #bdc3ca;
+
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
 
@@ -88,8 +93,11 @@
 
 .experience-card:hover {
   transform: translateY(-5px);
+
   border-color: rgba(142, 144, 169, 0.55);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+
+  box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.2);
 }
 
 /* =========================
@@ -97,10 +105,12 @@
 ========================= */
 
 .experience-number {
-  color: #8e90a9;
+  color: #04072a;
+
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 2px;
+
   padding-top: 4px;
 }
 
@@ -116,13 +126,15 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+
   gap: 20px;
 }
 
 .experience-content h2 {
   margin: 0 0 8px;
 
-  color: #ffffff;
+  color: #000000;
+
   font-size: 21px;
   font-weight: 600;
   line-height: 1.4;
@@ -131,18 +143,19 @@
 .experience-content h3 {
   margin: 0 0 16px;
 
-  color: #aeb5d2;
+  color: #1a1a1a;
+
   font-size: 13px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.5;
 }
 
 .experience-content p {
   max-width: 850px;
-
   margin: 0;
 
-  color: #aeb5c8;
+  color: #1a1a1a;
+
   font-size: 14px;
   line-height: 1.8;
 }
@@ -161,11 +174,10 @@
   align-items: center;
   justify-content: center;
 
-  color: #d9deed;
+  color: #ffffff;
+  background-color: #04072a;
 
-  background-color: rgba(142, 144, 169, 0.1);
-  border: 1px solid rgba(142, 144, 169, 0.25);
-
+  border: 1px solid #04072a;
   border-radius: 7px;
 
   font-size: 18px;
@@ -177,7 +189,10 @@
 }
 
 .experience-card:hover .experience-mark {
-  background-color: rgba(142, 144, 169, 0.18);
+  color: #ffffff;
+  background-color: #000000;
+  border-color: #000000;
+
   transform: rotate(45deg);
 }
 
@@ -186,6 +201,7 @@
 ========================= */
 
 @media (max-width: 900px) {
+
   .experience {
     padding: 90px 7%;
   }
@@ -210,6 +226,7 @@
 ========================= */
 
 @media (max-width: 700px) {
+
   .experience {
     min-height: calc(100vh - 60px);
     padding: 70px 6% 80px;
@@ -270,6 +287,7 @@
 ========================= */
 
 @media (max-width: 480px) {
+
   .experience {
     padding: 60px 5% 70px;
   }
