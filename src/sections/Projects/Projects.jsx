@@ -22,8 +22,8 @@ function Projects() {
     {
       title: "Portfolio Website",
       description:
-        "A personal portfolio website showcasing my skills, projects, experience, and background as a developer and UI/UX designer.",
-      technologies: ["React.js", "JavaScript", "CSS"],
+        "A responsive personal portfolio website showcasing my skills, projects, certifications, and experience as a Full-Stack Developer and UI/UX Designer. It includes a contact form with email functionality that allows visitors to send messages directly through the website.",
+      technologies: ["React.js", "JavaScript", "CSS","Spring Boot","MongoDB Atlas","Resend"],
       github: "https://github.com/ishqafathima/My-Portfolio",
     },
   ];
