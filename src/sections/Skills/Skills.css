@@ -279,13 +279,14 @@
    SKILL ICON
 ========================= */
 
+
 .skill-icon {
   width: 22px;
   height: 22px;
   flex-shrink: 0;
   color: #5063c9;
+  display: inline-block;
 }
-
   
 
   .soft-skills-title {

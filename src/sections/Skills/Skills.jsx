@@ -1,17 +1,126 @@
-return (
-  <section className="skills">
-    <div className="section-content">
+import "./Skills.css";
 
-      <h2>Technical Skills</h2>
+import {
+  SiReact,
+  SiJavascript,
+  SiTypescript,
+  SiHtml5,
+  SiCss,
+  SiExpo,
+  SiNodedotjs,
+  SiExpress,
+  SiSpringboot,
+  SiMongodb,
+  SiMysql,
+  SiFirebase,
+  SiGithub,
+  SiPostman,
+  SiFigma,
+} from "react-icons/si";
 
-      <div style={{ fontSize: "50px", color: "red" }}>
-        <SiReact />
+function Skills() {
+  const technicalSkills = {
+    "Frontend Development": [
+      { name: "React.js", icon: SiReact },
+      { name: "JavaScript", icon: SiJavascript },
+      { name: "TypeScript", icon: SiTypescript },
+      { name: "HTML", icon: SiHtml5 },
+      { name: "CSS", icon: SiCss },
+    ],
+
+    "Mobile Development": [
+      { name: "React Native", icon: SiReact },
+      { name: "Expo", icon: SiExpo },
+    ],
+
+    "Backend Development": [
+      { name: "Node.js", icon: SiNodedotjs },
+      { name: "Express.js", icon: SiExpress },
+      { name: "Spring Boot", icon: SiSpringboot },
+    ],
+
+    "Database & Cloud": [
+      { name: "MongoDB", icon: SiMongodb },
+      { name: "MySQL", icon: SiMysql },
+      { name: "Firebase", icon: SiFirebase },
+    ],
+
+    "Tools & Design": [
+      { name: "Git & GitHub", icon: SiGithub },
+      { name: "Postman", icon: SiPostman },
+      { name: "Figma", icon: SiFigma },
+      { name: "Axure", icon: null },
+    ],
+  };
+
+  const softSkills = [
+    "Communication",
+    "Teamwork",
+    "Problem Solving",
+    "Time Management",
+    "Adaptability",
+    "Quick Learning",
+  ];
+
+  return (
+    <section className="skills">
+      <div className="section-content">
+
+        <h2>Technical Skills</h2>
+
+        <div className="technical-skills">
+          {Object.entries(technicalSkills).map(
+            ([category, skills]) => (
+              <div
+                className="skill-category"
+                key={category}
+              >
+                <h3>{category}</h3>
+
+                <div className="skills-list">
+                  {skills.map((skill) => {
+                    const Icon = skill.icon;
+
+                    return (
+                      <div
+                        className="skill-item"
+                        key={skill.name}
+                      >
+                        {Icon && (
+                          <Icon
+                            className="skill-icon"
+                            size={22}
+                          />
+                        )}
+
+                        <span>{skill.name}</span>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            )
+          )}
+        </div>
+
+        <h2 className="soft-skills-title">
+          Soft Skills
+        </h2>
+
+        <div className="skills-list">
+          {softSkills.map((skill) => (
+            <div
+              className="skill-item"
+              key={skill}
+            >
+              {skill}
+            </div>
+          ))}
+        </div>
+
       </div>
+    </section>
+  );
+}
 
-      <p style={{ color: "white", fontSize: "25px" }}>
-        React Icon Test
-      </p>
-
-    </div>
-  </section>
-);
+export default Skills;
