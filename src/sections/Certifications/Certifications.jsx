@@ -57,9 +57,7 @@ return ( <section className="certifications"> <div className="certifications-con
     {/* Section Heading */}
     <div className="certifications-heading">
 
-      <span className="section-label">
-        MY ACHIEVEMENTS
-      </span>
+     
 
       <h1>Certifications</h1>
 
