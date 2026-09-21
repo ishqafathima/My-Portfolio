@@ -179,7 +179,8 @@
   border-radius: 3px;
 }
 
-/* Make icons white when hovering */
+/* Hover icon */
+
 .skill-item:hover .skill-icon {
   color: #ffffff;
 }
@@ -190,7 +191,7 @@
 }
 
 /* =========================
-   SOFT SKILLS
+   SOFT SKILLS SECTION
 ========================= */
 
 .soft-skills-section {
@@ -218,28 +219,46 @@
   align-items: center;
   gap: 14px;
   padding: 16px 18px;
-  color: #d9deed;
-  background-color: rgba(255, 255, 255, 0.035);
+
+  /* Light gray card */
+  background-color: #bdc3ca;
+
+  /* Black text */
+  color: #000000;
+
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 8px;
   font-size: 14px;
+
   transition:
     border-color 0.3s ease,
     transform 0.3s ease,
-    background-color 0.3s ease;
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
+/* Soft skill hover */
+
 .soft-skill-item:hover {
-  background-color: rgba(142, 144, 169, 0.1);
-  border-color: rgba(142, 144, 169, 0.5);
+  background-color: #04072a;
+  color: #ffffff;
+  border-color: #04072a;
   transform: translateY(-2px);
 }
 
+/* Soft skill number */
+
 .soft-skill-number {
-  color: #8e90a9;
+  color: #04072a;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 1px;
+}
+
+/* Number becomes white on hover */
+
+.soft-skill-item:hover .soft-skill-number {
+  color: #ffffff;
 }
 
 /* =========================
@@ -293,6 +312,8 @@
     line-height: 1.7;
   }
 
+  /* Technical skills become one column */
+
   .technical-skills {
     grid-template-columns: 1fr;
     gap: 18px;
@@ -310,6 +331,8 @@
     padding: 9px 13px;
     font-size: 13px;
   }
+
+  /* Soft skills */
 
   .soft-skills-section {
     margin-top: 60px;
@@ -356,6 +379,8 @@
     height: 18px;
     font-size: 17px;
   }
+
+  /* Soft skills one column */
 
   .soft-skills-list {
     grid-template-columns: 1fr;
