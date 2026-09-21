@@ -3,21 +3,21 @@ import "./Experience.css";
 function Experience() {
   const experiences = [
     {
-      number: "01",
+      
       title: "Fresher – Seeking Internship",
       subtitle: "Information Technology Graduate",
       description:
         "I am a recent Information Technology graduate currently seeking an internship opportunity to begin my professional career in software development.",
     },
     {
-      number: "02",
+      
       title: "University Project Experience",
       subtitle: "Academic Projects",
       description:
         "Although I do not have professional work experience yet, I have gained practical experience through university projects involving web development, mobile application development, databases, UI/UX design, and software development.",
     },
     {
-      number: "03",
+     
       title: "Technical & Practical Skills",
       subtitle: "University Experience",
       description:

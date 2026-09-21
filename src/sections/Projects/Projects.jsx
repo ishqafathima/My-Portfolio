@@ -3,7 +3,7 @@ import "./Projects.css";
 function Projects() {
   const projects = [
     {
-      number: "01",
+      
       title: "MyUniPal",
       image: "/MyUnipal.jpeg",
       description:
@@ -16,7 +16,7 @@ function Projects() {
     },
 
     {
-      number: "02",
+      
       title: "AI Study Planner",
       image: "/AI Study Planner.png",
       description:
@@ -27,7 +27,7 @@ function Projects() {
     },
 
     {
-      number: "03",
+      
       title: "Portfolio Website",
       image: "/Portfolio.png",
       description:

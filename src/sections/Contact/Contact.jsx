@@ -78,7 +78,7 @@ function Contact() {
           {/* Left Information */}
           <div className="contact-info">
 
-            <span className="contact-number">01</span>
+            
 
             <h2>Let's work together.</h2>
 
@@ -119,7 +119,7 @@ function Contact() {
           <div className="contact-form-card">
 
             <div className="form-header">
-              <span>02</span>
+              
               <p>SEND A MESSAGE</p>
             </div>
 

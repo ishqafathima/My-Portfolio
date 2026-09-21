@@ -164,16 +164,13 @@ return ( <section className="skills"> <div className="skills-container">
 
       <div className="soft-skills-list">
 
-        {softSkills.map((skill, index) => (
+        {softSkills.map((skill) => (
 
           <div
             className="soft-skill-item"
             key={skill}
           >
 
-            <span className="soft-skill-number">
-              {String(index + 1).padStart(2, "0")}
-            </span>
 
             <span>{skill}</span>
 

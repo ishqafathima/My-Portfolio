@@ -3,7 +3,7 @@ import "./Certifications.css";
 function Certifications() {
 const certifications = [
 {
-number: "01",
+
 title: "IEEEXtreme 17.0",
 issuer: "IEEE",
 date: "29th October 2023",
@@ -13,7 +13,7 @@ description:
 pdf: "/Certificates/IEEEXtreme 17.0.pdf",
 },
 {
-number: "02",
+
 title: "IEEEXtreme 18.0",
 issuer: "IEEE",
 date: "26th October 2024",
@@ -23,7 +23,7 @@ description:
 pdf: "/Certificates/IEEEXtreme 18.0.pdf",
 },
 {
-number: "03",
+
 title: "Introduction to Cybersecurity",
 issuer: "Cisco Networking Academy",
 date: "9th August 2025",
@@ -32,7 +32,7 @@ description:
 pdf: "/Certificates/Cybersecurity.pdf",
 },
 {
-number: "04",
+
 title: "JavaScript Essentials 1",
 issuer: "Cisco Networking Academy",
 date: "7th April 2025",
@@ -41,7 +41,7 @@ description:
 pdf: "/Certificates/JavaScript_Essentials_1.pdf",
 },
 {
-number: "05",
+
 title: "JavaScript Essentials 2",
 issuer: "Cisco Networking Academy",
 date: "24th June 2025",
