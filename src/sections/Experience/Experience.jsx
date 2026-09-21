@@ -1,51 +1,75 @@
 import "./Experience.css";
 
-
 function Experience() {
+  const experiences = [
+    {
+      number: "01",
+      title: "Fresher – Seeking Internship",
+      subtitle: "Information Technology Graduate",
+      description:
+        "I am a recent Information Technology graduate currently seeking an internship opportunity to begin my professional career in software development.",
+    },
+    {
+      number: "02",
+      title: "University Project Experience",
+      subtitle: "Academic Projects",
+      description:
+        "Although I do not have professional work experience yet, I have gained practical experience through university projects involving web development, mobile application development, databases, UI/UX design, and software development.",
+    },
+    {
+      number: "03",
+      title: "Technical & Practical Skills",
+      subtitle: "University Experience",
+      description:
+        "Through my academic projects, I have developed problem-solving skills and practical knowledge of different technologies. I am eager to apply my knowledge in a professional environment and continue developing my skills.",
+    },
+  ];
+
   return (
-    <div className="section-content">
-      <h2>Experience</h2>
+    <section className="experience">
+      <div className="experience-container">
 
-      <div className="experience-card">
-        <h3>Fresher – Seeking Internship</h3>
+        <div className="experience-heading">
+          <span className="section-label">MY EXPERIENCE</span>
 
-        <h4>Information Technology Graduate</h4>
+          <h1>Experience</h1>
 
-        <p>
-          I am a recent Information Technology graduate and
-          currently seeking an internship opportunity to begin
-          my professional career in software development.
-        </p>
+          <p>
+            My academic journey, practical project experience,
+            and readiness to begin my professional career.
+          </p>
+
+          <div className="heading-line"></div>
+        </div>
+
+        <div className="experience-list">
+          {experiences.map((experience) => (
+            <article
+              className="experience-card"
+              key={experience.number}
+            >
+              <div className="experience-number">
+                {experience.number}
+              </div>
+
+              <div className="experience-content">
+                <div className="experience-top">
+                  <div>
+                    <h2>{experience.title}</h2>
+                    <h3>{experience.subtitle}</h3>
+                  </div>
+
+                  <span className="experience-mark">+</span>
+                </div>
+
+                <p>{experience.description}</p>
+              </div>
+            </article>
+          ))}
+        </div>
+
       </div>
-
-      <div className="experience-card">
-        <h3>University Project Experience</h3>
-
-        <h4>Academic Projects</h4>
-
-        <p>
-          Although I do not have professional work experience
-          yet, I have gained practical experience through
-          university projects involving web development, mobile
-          application development, databases, UI/UX design,
-          and software development.
-        </p>
-      </div>
-
-      <div className="experience-card">
-        <h3>Technical & Practical Skills</h3>
-
-        <h4>University Experience</h4>
-
-        <p>
-          Through my academic projects, I have developed
-          problem-solving skills and practical knowledge of
-          different technologies. I am eager to apply my
-          knowledge in a professional environment and continue
-          developing my skills.
-        </p>
-      </div>
-    </div>
+    </section>
   );
 }
 
