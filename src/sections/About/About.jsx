@@ -4,8 +4,8 @@ import { FaGithub, FaLinkedin, FaMapMarkerAlt, FaEnvelope, FaPhone, FaBriefcase 
 function About() {
 const downloadCV = () => {
 const link = document.createElement("a");
-link.href = "/ishqa.pdf";
-link.download = "ishqa.pdf";
+link.href = "/Ishqa.pdf";
+link.download = "Ishqa.pdf";
 link.click();
 };
 
