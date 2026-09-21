@@ -87,7 +87,7 @@ function Home() {
                 <small>FULL-STACK DEVELOPER</small>
               </div>
 
-              <div className="profile-line"></div>
+              
 
             </div>
 
