@@ -1,4 +1,3 @@
-
 import "./Navbar.css";
 import { useState } from "react";
 
@@ -11,41 +10,85 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-      <div className="logo">Portfolio</div>
+      <div className="navbar-container">
 
-      {/* Desktop Navigation */}
-      <div className="nav-links">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#certifications">Certifications</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
-      </div>
+        {/* Logo */}
+        <a href="#home" className="logo" onClick={closeMenu}>
+          <span>I</span>shka.
+        </a>
 
-      {/* Mobile Menu Button */}
-      <button
-        className="menu-btn"
-        onClick={() => setMenuOpen(!menuOpen)}
-        aria-label="Toggle navigation menu"
-      >
-        ☰
-      </button>
+        {/* Desktop Navigation */}
+        <div className="nav-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#certifications">Certifications</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact" className="contact-nav">
+            Contact
+          </a>
+        </div>
 
-      {/* Mobile Navigation */}
-      <div className={`mobile-nav ${menuOpen ? "open" : ""}`}>
-        <a href="#home" onClick={closeMenu}>Home</a>
-        <a href="#about" onClick={closeMenu}>About</a>
-        <a href="#skills" onClick={closeMenu}>Skills</a>
-        <a href="#projects" onClick={closeMenu}>Projects</a>
-        <a href="#certifications" onClick={closeMenu}>Certifications</a>
-        <a href="#experience" onClick={closeMenu}>Experience</a>
-        <a href="#contact" onClick={closeMenu}>Contact</a>
+        {/* Mobile Menu Button */}
+        <button
+          className={`menu-btn ${menuOpen ? "active" : ""}`}
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Toggle navigation menu"
+          aria-expanded={menuOpen}
+        >
+          <span></span>
+          <span></span>
+        </button>
+
+        {/* Mobile Navigation */}
+        <div className={`mobile-nav ${menuOpen ? "open" : ""}`}>
+
+          <div className="mobile-nav-header">
+            <span>NAVIGATION</span>
+            <span>MENU</span>
+          </div>
+
+          <a href="#home" onClick={closeMenu}>
+            <span>01</span>
+            Home
+          </a>
+
+          <a href="#about" onClick={closeMenu}>
+            <span>02</span>
+            About
+          </a>
+
+          <a href="#skills" onClick={closeMenu}>
+            <span>03</span>
+            Skills
+          </a>
+
+          <a href="#projects" onClick={closeMenu}>
+            <span>04</span>
+            Projects
+          </a>
+
+          <a href="#certifications" onClick={closeMenu}>
+            <span>05</span>
+            Certifications
+          </a>
+
+          <a href="#experience" onClick={closeMenu}>
+            <span>06</span>
+            Experience
+          </a>
+
+          <a href="#contact" onClick={closeMenu}>
+            <span>07</span>
+            Contact
+          </a>
+
+        </div>
+
       </div>
     </nav>
   );
 }
 
 export default Navbar;
-
