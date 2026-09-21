@@ -5,11 +5,8 @@
 
 .projects {
   min-height: calc(100vh - 70px);
-
-  padding: 80px 8% 100px;
-
+  padding: 70px 8% 90px;
   background-color: #04072a;
-
   box-sizing: border-box;
 }
 
@@ -20,8 +17,7 @@
 
 .projects-content {
   width: 100%;
-  max-width: 1100px;
-
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -32,11 +28,8 @@
 
 .projects-content h1 {
   text-align: center;
-
   font-size: clamp(30px, 4vw, 40px);
-
   color: #ffffff;
-
   margin: 0 0 10px;
 }
 
@@ -47,14 +40,10 @@
 
 .projects-subtitle {
   text-align: center;
-
   color: #e1e1e1;
-
-  font-size: 16px;
-
+  font-size: 15px;
   line-height: 1.6;
-
-  margin: 0 auto 45px;
+  margin: 0 auto 40px;
 }
 
 
@@ -64,10 +53,8 @@
 
 .projects-grid {
   display: grid;
-
   grid-template-columns: repeat(3, minmax(0, 1fr));
-
-  gap: 25px;
+  gap: 20px;
 }
 
 
@@ -77,44 +64,38 @@
 
 .project-card {
   min-width: 0;
-
   background-color: #ffffff;
-
   border: 1px solid #e5e5e5;
-
   border-radius: 12px;
-
   overflow: hidden;
 
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
 
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card:hover {
-  transform: translateY(-7px);
+  transform: translateY(-6px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
 }
 
 
 /* =========================
-   PROJECT IMAGE
+   PROJECT IMAGE / PROJECT 1
 ========================= */
 
 .project-image {
-  height: 180px;
+  height: 150px;
 
   background-color: #eef3f8;
 
   display: flex;
-
   align-items: center;
-
   justify-content: center;
 
   color: #607d9d;
 
-  font-size: 20px;
-
+  font-size: 18px;
   font-weight: 600;
 }
 
@@ -124,27 +105,21 @@
 ========================= */
 
 .project-info {
-  padding: 25px;
+  padding: 20px;
 }
 
 .project-info h2 {
-  font-size: 23px;
-
-  margin: 0 0 12px;
-
+  font-size: 21px;
+  margin: 0 0 10px;
   color: #222;
-
   line-height: 1.3;
 }
 
 .project-info p {
-  font-size: 14px;
-
-  line-height: 1.7;
-
+  font-size: 13px;
+  line-height: 1.6;
   color: #555;
-
-  margin: 0 0 18px;
+  margin: 0 0 16px;
 }
 
 
@@ -154,26 +129,34 @@
 
 .technologies {
   display: flex;
-
   flex-wrap: wrap;
-
-  gap: 8px;
-
-  margin-bottom: 20px;
+  gap: 7px;
+  margin-bottom: 18px;
 }
 
 .technologies span {
   background-color: #f0f3f6;
 
-  padding: 6px 10px;
+  padding: 5px 9px;
 
   border-radius: 5px;
 
-  font-size: 12px;
+  font-size: 11px;
 
   color: #444;
 
   white-space: nowrap;
+}
+
+
+/* =========================
+   PROJECT BUTTONS
+========================= */
+
+.project-buttons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
 }
 
 
@@ -184,7 +167,7 @@
 .github-btn {
   display: inline-block;
 
-  padding: 9px 16px;
+  padding: 8px 13px;
 
   background-color: #222;
 
@@ -194,13 +177,40 @@
 
   border-radius: 6px;
 
-  font-size: 13px;
+  font-size: 12px;
 
   transition: 0.3s ease;
 }
 
 .github-btn:hover {
-  opacity: 0.8;
+  background-color: #444;
+}
+
+
+/* =========================
+   FIGMA BUTTON
+========================= */
+
+.figma-btn {
+  display: inline-block;
+
+  padding: 8px 13px;
+
+  background-color: #f24e1e;
+
+  color: white;
+
+  text-decoration: none;
+
+  border-radius: 6px;
+
+  font-size: 12px;
+
+  transition: 0.3s ease;
+}
+
+.figma-btn:hover {
+  background-color: #d93f13;
 }
 
 
@@ -210,14 +220,13 @@
 
 .view-all-projects {
   text-align: center;
-
-  margin-top: 40px;
+  margin-top: 35px;
 }
 
 .view-all-projects a {
   display: inline-block;
 
-  padding: 12px 25px;
+  padding: 11px 23px;
 
   background-color: #888992;
 
@@ -227,7 +236,7 @@
 
   border-radius: 6px;
 
-  font-size: 15px;
+  font-size: 14px;
 
   font-weight: 500;
 
@@ -236,7 +245,6 @@
 
 .view-all-projects a:hover {
   background-color: #6f7190;
-
   color: white;
 }
 
@@ -248,26 +256,30 @@
 @media (max-width: 950px) {
 
   .projects {
-    padding: 70px 7% 90px;
+    padding: 65px 7% 80px;
+  }
+
+  .projects-content {
+    max-width: 850px;
   }
 
   .projects-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-
-    gap: 25px;
+    gap: 20px;
   }
 
   .project-image {
-    height: 170px;
+    height: 150px;
   }
 
   .project-info {
-    padding: 22px;
+    padding: 20px;
   }
 
   .project-info h2 {
     font-size: 21px;
   }
+
 }
 
 
@@ -279,12 +291,12 @@
 
   .projects {
     min-height: calc(100vh - 60px);
-
-    padding: 60px 6% 80px;
+    padding: 55px 6% 70px;
   }
 
   .projects-content {
     width: 100%;
+    max-width: 100%;
   }
 
   .projects-content h1 {
@@ -293,15 +305,14 @@
 
   .projects-subtitle {
     font-size: 14px;
-
     margin-bottom: 30px;
   }
 
   /* One card per row */
+
   .projects-grid {
     grid-template-columns: 1fr;
-
-    gap: 25px;
+    gap: 22px;
   }
 
   .project-card {
@@ -309,11 +320,11 @@
   }
 
   .project-image {
-    height: 170px;
+    height: 155px;
   }
 
   .project-info {
-    padding: 22px;
+    padding: 20px;
   }
 
   .project-info h2 {
@@ -322,7 +333,6 @@
 
   .project-info p {
     font-size: 14px;
-
     line-height: 1.7;
   }
 
@@ -332,19 +342,23 @@
 
   .technologies span {
     font-size: 12px;
-
     padding: 6px 9px;
   }
 
-  .github-btn {
-    padding: 9px 15px;
+  .project-buttons {
+    gap: 8px;
+  }
 
+  .github-btn,
+  .figma-btn {
+    padding: 9px 14px;
     font-size: 13px;
   }
 
   .view-all-projects {
-    margin-top: 35px;
+    margin-top: 30px;
   }
+
 }
 
 
@@ -355,7 +369,7 @@
 @media (max-width: 480px) {
 
   .projects {
-    padding: 50px 5% 70px;
+    padding: 45px 5% 65px;
   }
 
   .projects-content h1 {
@@ -364,9 +378,7 @@
 
   .projects-subtitle {
     font-size: 13px;
-
     line-height: 1.6;
-
     margin-bottom: 25px;
   }
 
@@ -375,9 +387,8 @@
   }
 
   .project-image {
-    height: 150px;
-
-    font-size: 18px;
+    height: 140px;
+    font-size: 17px;
   }
 
   .project-info {
@@ -390,39 +401,44 @@
 
   .project-info p {
     font-size: 13px;
-
     line-height: 1.65;
+  }
+
+  .technologies {
+    gap: 6px;
+    margin-bottom: 16px;
   }
 
   .technologies span {
     font-size: 11px;
-
     padding: 5px 8px;
   }
 
-  .github-btn {
+  /* Stack buttons on small phones */
+
+  .project-buttons {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .github-btn,
+  .figma-btn {
     width: 100%;
-
     box-sizing: border-box;
-
     text-align: center;
-
     padding: 10px;
-
     font-size: 13px;
   }
 
   .view-all-projects {
-    margin-top: 30px;
+    margin-top: 28px;
   }
 
   .view-all-projects a {
     width: 100%;
-
     box-sizing: border-box;
-
     padding: 11px 15px;
-
     font-size: 14px;
   }
+
 }

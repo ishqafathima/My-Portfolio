@@ -1,3 +1,4 @@
+
 import "./Projects.css";
 
 function Projects() {
@@ -8,6 +9,8 @@ function Projects() {
         "A university community and student support application designed to help students connect, share information, and access useful resources.",
       technologies: ["React Native", "Node.js", "Firebase"],
       github: "https://github.com/ishqafathima/MyUniPal-My-Code-Frontend-",
+      figma:
+        "https://www.figma.com/design/LiM9rB82j3ZfRc7VfeJntD/MyUniPal",
     },
     {
       title: "AI Study Planner",
@@ -57,14 +60,29 @@ function Projects() {
                   ))}
                 </div>
 
-                <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="github-btn"
-                >
-                  View on GitHub
-                </a>
+                <div className="project-buttons">
+
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="github-btn"
+                  >
+                    View on GitHub
+                  </a>
+
+                  {project.figma && (
+                    <a
+                      href={project.figma}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="figma-btn"
+                    >
+                      View Figma
+                    </a>
+                  )}
+
+                </div>
 
               </div>
 
@@ -72,16 +90,15 @@ function Projects() {
           ))}
         </div>
 
-        {/* View All Projects */}
-       <div className="view-all-projects">
-  <a
-    href="https://github.com/ishqafathima?tab=repositories"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    View All Projects →
-  </a>
-</div>
+        <div className="view-all-projects">
+          <a
+            href="https://github.com/ishqafathima?tab=repositories"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View All Projects →
+          </a>
+        </div>
 
       </div>
     </section>
