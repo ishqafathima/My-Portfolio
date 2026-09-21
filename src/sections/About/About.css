@@ -222,7 +222,7 @@ box-sizing: border-box;
 
 padding: 30px;
 
-background-color: rgba(255, 255, 255, 0.035);
+background-color: #bdc3ca;
 
 border: 1px solid rgba(255, 255, 255, 0.12);
 
@@ -267,7 +267,7 @@ flex-shrink: 0;
 
 border-radius: 50%;
 
-background-color: #8e90a9;
+background-color: #0a0a0b;
 
 box-shadow: 0 0 0 6px rgba(142, 144, 169, 0.1);
 }
@@ -275,7 +275,7 @@ box-shadow: 0 0 0 6px rgba(142, 144, 169, 0.1);
 .info-card-header h3 {
 margin: 0;
 
-color: #ffffff;
+color: #000000;
 
 font-size: 18px;
 
@@ -285,7 +285,7 @@ font-weight: 600;
 .info-card-header p {
 margin: 4px 0 0;
 
-color: #8e90a9;
+color: #0d0e19;
 
 font-size: 13px;
 }
