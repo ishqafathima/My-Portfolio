@@ -5,7 +5,7 @@ function Projects() {
   const projects = [
     {
       title: "MyUniPal",
-      image: "/MyUniPal.png",
+      image: "/MyUnipal.jpeg",
       description:
         "A university community and student support application designed to help students connect, share information, and access useful resources.",
       technologies: ["React Native", "Node.js", "Firebase"],
