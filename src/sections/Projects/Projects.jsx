@@ -37,13 +37,10 @@ function Projects() {
         "MongoDB Atlas",
         "Resend",
       ],
-
       frontend:
         "https://github.com/ishqafathima/My-Portfolio",
-
       backend:
         "https://github.com/ishqafathima/Portfolio-Backend",
-
     },
   ];
 
@@ -113,10 +110,10 @@ function Projects() {
 
                 </div>
 
-                {/* Buttons */}
+                {/* Project Buttons */}
                 <div className="project-buttons">
 
-                  {/* Portfolio Frontend */}
+                  {/* Frontend */}
                   {project.frontend && (
                     <a
                       href={project.frontend}
@@ -129,20 +126,20 @@ function Projects() {
                     </a>
                   )}
 
-                  {/* Portfolio Backend */}
+                  {/* Backend */}
                   {project.backend && (
                     <a
                       href={project.backend}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="project-link secondary-link"
+                      className="project-link primary-link"
                     >
                       Backend
                       <span>↗</span>
                     </a>
                   )}
 
-                  {/* Normal GitHub */}
+                  {/* GitHub */}
                   {project.github && (
                     <a
                       href={project.github}
@@ -161,7 +158,7 @@ function Projects() {
                       href={project.figma}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="project-link secondary-link"
+                      className="project-link primary-link"
                     >
                       Figma
                       <span>↗</span>
