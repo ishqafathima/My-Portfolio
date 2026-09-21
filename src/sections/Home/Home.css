@@ -5,12 +5,17 @@
 
 .home {
   min-height: calc(100vh - 70px);
+
   display: flex;
   align-items: center;
+
   padding: 60px 10%;
+
   background-color: #04072a;
+
   box-sizing: border-box;
 }
+
 
 /* =========================
    HOME CONTENT
@@ -19,6 +24,7 @@
 .home-content {
   width: 100%;
   max-width: 1200px;
+
   margin: 0 auto;
 
   display: flex;
@@ -27,6 +33,7 @@
 
   gap: 60px;
 }
+
 
 /* =========================
    INTRO
@@ -39,32 +46,46 @@
 
 .hello {
   font-size: 20px;
+
   margin: 0 0 5px;
+
   color: #ffffff;
 }
 
 .name {
   font-size: clamp(38px, 5vw, 52px);
+
   margin: 0 0 15px;
+
   color: #dff4ff;
+
   font-weight: 700;
 }
 
 .role {
   font-size: clamp(16px, 2vw, 20px);
+
   line-height: 1.8;
+
   margin: 0;
+
   color: #ffffff;
+
   font-weight: 600;
 }
 
 .description {
   max-width: 650px;
+
   margin-top: 25px;
+
   font-size: 16px;
+
   line-height: 1.7;
+
   color: #ffffff;
 }
+
 
 /* =========================
    BUTTONS
@@ -72,28 +93,39 @@
 
 .home-buttons {
   display: flex;
+
   gap: 15px;
+
   margin-top: 25px;
+
   flex-wrap: wrap;
 }
 
 .home-buttons button {
   padding: 11px 22px;
+
   border-radius: 7px;
+
   font-size: 15px;
+
   cursor: pointer;
+
   transition: 0.3s ease;
 }
 
 .work-btn {
   border: none;
+
   background-color: #dff4ff;
+
   color: #04072a;
 }
 
 .contact-btn {
   background-color: transparent;
+
   border: 1px solid #dff4ff;
+
   color: #ffffff;
 }
 
@@ -101,21 +133,65 @@
   transform: translateY(-2px);
 }
 
+
 /* =========================
    PROFILE
 ========================= */
 
 .profile {
   flex: 0 0 330px;
+
   display: flex;
+
   justify-content: center;
+
+  align-items: center;
 }
+
+
+/* =========================
+   PROFILE IMAGE
+========================= */
 
 .profile-image {
   width: 280px;
   height: 280px;
+
   object-fit: cover;
+
   border-radius: 50%;
+
+  /* Gradient ring */
+  border: 5px solid transparent;
+
+  background:
+    linear-gradient(#04072a, #04072a) padding-box,
+    linear-gradient(
+      135deg,
+      #dff4ff,
+      #7dd3fc,
+      #ffffff
+    ) border-box;
+
+  /* Soft glow */
+  box-shadow:
+    0 0 25px rgba(125, 211, 252, 0.25);
+
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+
+/* =========================
+   PROFILE HOVER
+========================= */
+
+.profile-image:hover {
+  transform: scale(1.04);
+
+  box-shadow:
+    0 0 30px rgba(125, 211, 252, 0.4);
 }
 
 
@@ -127,6 +203,7 @@
 
   .home {
     min-height: calc(100vh - 65px);
+
     padding: 60px 7%;
   }
 
@@ -157,13 +234,17 @@
 
   .home {
     min-height: calc(100vh - 60px);
+
     padding: 50px 6%;
   }
 
   .home-content {
     flex-direction: column-reverse;
+
     justify-content: center;
+
     text-align: center;
+
     gap: 30px;
   }
 
@@ -177,38 +258,52 @@
 
   .name {
     font-size: 40px;
+
     margin-bottom: 12px;
   }
 
   .role {
     font-size: 16px;
+
     line-height: 1.7;
   }
 
   .description {
     max-width: 100%;
+
     margin: 20px auto 0;
+
     font-size: 15px;
+
     line-height: 1.6;
   }
 
   .home-buttons {
     justify-content: center;
+
     gap: 12px;
   }
 
   .home-buttons button {
     padding: 10px 18px;
+
     font-size: 14px;
   }
 
+
+  /* Mobile profile */
+
   .profile {
     flex: none;
+
+    width: 100%;
   }
 
   .profile-image {
     width: 210px;
     height: 210px;
+
+    border-width: 5px;
   }
 }
 
@@ -237,18 +332,23 @@
 
   .role {
     font-size: 14px;
+
     line-height: 1.8;
   }
 
   .description {
     font-size: 14px;
+
     line-height: 1.6;
+
     margin-top: 18px;
   }
 
   .home-buttons {
     flex-direction: column;
+
     align-items: center;
+
     width: 100%;
   }
 
@@ -256,8 +356,45 @@
     width: 180px;
   }
 
+
+  /* Small phone profile */
+
   .profile-image {
     width: 180px;
     height: 180px;
+
+    border-width: 4px;
+
+    box-shadow:
+      0 0 18px rgba(125, 211, 252, 0.25);
+  }
+}
+
+
+/* =========================
+   VERY SMALL PHONES
+========================= */
+
+@media (max-width: 360px) {
+
+  .profile-image {
+    width: 155px;
+    height: 155px;
+  }
+
+  .name {
+    font-size: 31px;
+  }
+
+  .role {
+    font-size: 13px;
+  }
+
+  .description {
+    font-size: 13px;
+  }
+
+  .home-buttons button {
+    width: 170px;
   }
 }

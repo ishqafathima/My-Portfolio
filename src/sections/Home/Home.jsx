@@ -12,7 +12,7 @@ function Home() {
           <p className="hello">Hello, I'm</p>
 
           <h1 className="name">
-            Ishka Lafir
+            Fathima Ishka
           </h1>
 
           <h2 className="role">
