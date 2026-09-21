@@ -168,18 +168,18 @@
     linear-gradient(#04072a, #04072a) padding-box,
     linear-gradient(
       135deg,
-      #00f5ff,
-      #7c3aed,
-      #ff4ecd,
-      #ff8a00,
-      #00f5ff
+     #dff4ff, 
+     #c4b5fd, 
+     #fbcfe8, 
+     #fde68a,
+     #dff4ff
     ) border-box;
 
   /* Colorful glow */
   box-shadow:
-    0 0 20px rgba(0, 245, 255, 0.35),
-    0 0 40px rgba(124, 58, 237, 0.25),
-    0 0 60px rgba(255, 78, 205, 0.18);
+    0 0 18px rgba(223, 244, 255, 0.45), 
+    0 0 35px rgba(196, 181, 253, 0.30), 
+    0 0 50px rgba(251, 207, 232, 0.20);
 
   transition:
     transform 0.4s ease,
@@ -195,9 +195,9 @@
   transform: scale(1.05);
 
   box-shadow:
-    0 0 25px rgba(0, 245, 255, 0.5),
-    0 0 50px rgba(124, 58, 237, 0.4),
-    0 0 75px rgba(255, 78, 205, 0.3);
+  0 0 22px rgba(223, 244, 255, 0.55), 
+  0 0 42px rgba(196, 181, 253, 0.40), 
+  0 0 60px rgba(251, 207, 232, 0.30);
 }
 
 
