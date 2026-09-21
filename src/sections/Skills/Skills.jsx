@@ -21,34 +21,34 @@ import {
 function Skills() {
   const technicalSkills = {
     "Frontend Development": [
-      { name: "React.js", icon: <SiReact /> },
-      { name: "JavaScript", icon: <SiJavascript /> },
-      { name: "TypeScript", icon: <SiTypescript /> },
-      { name: "HTML", icon: <SiHtml5 /> },
-      { name: "CSS", icon: <SiCss3 /> },
+      { name: "React.js", icon: SiReact },
+      { name: "JavaScript", icon: SiJavascript },
+      { name: "TypeScript", icon: SiTypescript },
+      { name: "HTML", icon: SiHtml5 },
+      { name: "CSS", icon: SiCss3 },
     ],
 
     "Mobile Development": [
-      { name: "React Native", icon: <SiReact /> },
-      { name: "Expo", icon: <SiExpo /> },
+      { name: "React Native", icon: SiReact },
+      { name: "Expo", icon: SiExpo },
     ],
 
     "Backend Development": [
-      { name: "Node.js", icon: <SiNodedotjs /> },
-      { name: "Express.js", icon: <SiExpress /> },
-      { name: "Spring Boot", icon: <SiSpringboot /> },
+      { name: "Node.js", icon: SiNodedotjs },
+      { name: "Express.js", icon: SiExpress },
+      { name: "Spring Boot", icon: SiSpringboot },
     ],
 
     "Database & Cloud": [
-      { name: "MongoDB", icon: <SiMongodb /> },
-      { name: "MySQL", icon: <SiMysql /> },
-      { name: "Firebase", icon: <SiFirebase /> },
+      { name: "MongoDB", icon: SiMongodb },
+      { name: "MySQL", icon: SiMysql },
+      { name: "Firebase", icon: SiFirebase },
     ],
 
     "Tools & Design": [
-      { name: "Git & GitHub", icon: <SiGithub /> },
-      { name: "Postman", icon: <SiPostman /> },
-      { name: "Figma", icon: <SiFigma /> },
+      { name: "Git & GitHub", icon: SiGithub },
+      { name: "Postman", icon: SiPostman },
+      { name: "Figma", icon: SiFigma },
       { name: "Axure", icon: null },
     ],
   };
@@ -76,19 +76,25 @@ function Skills() {
                 <h3>{category}</h3>
 
                 <div className="skills-list">
-                  {skills.map((skill) => (
-                    <div className="skill-item" key={skill.name}>
+                  {skills.map((skill) => {
+                    const Icon = skill.icon;
 
-                      {skill.icon && (
-                        <span className="skill-icon">
-                          {skill.icon}
-                        </span>
-                      )}
+                    return (
+                      <div
+                        className="skill-item"
+                        key={skill.name}
+                      >
+                        {Icon && (
+                          <Icon
+                            className="skill-icon"
+                            size={22}
+                          />
+                        )}
 
-                      <span>{skill.name}</span>
-
-                    </div>
-                  ))}
+                        <span>{skill.name}</span>
+                      </div>
+                    );
+                  })}
                 </div>
 
               </div>
