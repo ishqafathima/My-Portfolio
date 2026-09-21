@@ -1,86 +1,137 @@
-
 import "./About.css";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaMapMarkerAlt, FaEnvelope, FaPhone, FaBriefcase } from "react-icons/fa";
 
 function About() {
-  const downloadCV = () => {
-    const link = document.createElement("a");
-    link.href = "/ishqa.pdf";
-    link.download = "ishqa.pdf";
-    link.click();
-  };
+const downloadCV = () => {
+const link = document.createElement("a");
+link.href = "/ishqa.pdf";
+link.download = "ishqa.pdf";
+link.click();
+};
 
-  return (
-    <div className="section-content">
+return ( <section className="about-section"> <div className="about-container">
 
+
+    {/* Section Heading */}
+    <div className="about-heading">
+      <span className="section-label">ABOUT ME</span>
       <h2>Who am I?</h2>
+      <div className="heading-line"></div>
+    </div>
 
-      <p>
-        I am an Information Technology graduate with a strong
-        interest in full-stack development, mobile application
-        development, and UI/UX design.
-      </p>
+    <div className="about-content">
 
-      <p>
-        I am particularly good at frontend development using
-        React.js, and I enjoy creating clean, responsive, and
-        user-friendly interfaces. I also enjoy learning new
-        technologies and building useful applications.
-      </p>
+      {/* Left Side */}
+      <div className="about-text">
 
-      <div className="contact-info">
-
-        <p>
-          <strong>Name:</strong> Ishka Lafir
+        <p className="intro-text">
+          I am an Information Technology graduate with a strong
+          interest in <span>full-stack development</span>,{" "}
+          <span>mobile application development</span>, and{" "}
+          <span>UI/UX design</span>.
         </p>
 
         <p>
-          <strong>Email:</strong> ishqafathima34@gmail.com
+          I am particularly good at frontend development using
+          React.js, and I enjoy creating clean, responsive, and
+          user-friendly interfaces. I also enjoy learning new
+          technologies and building useful applications.
         </p>
 
-        <p>
-          <strong>Location:</strong> Weligama, Matara, Sri Lanka
-        </p>
+        {/* Social Links */}
+        <div className="about-actions">
 
-        <p>
-          <strong>Phone:</strong> +94 767607224
-        </p>
+          <button className="cv-button" onClick={downloadCV}>
+            Download CV
+          </button>
 
-        <p>
-          <strong>Experience:</strong> Fresher – Seeking Internship
-        </p>
+          <div className="social-links">
+            <a
+              href="https://github.com/ishqafathima"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+            >
+              <FaGithub />
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/ishqalafir/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <FaLinkedin />
+            </a>
+          </div>
+
+        </div>
 
       </div>
 
-      {/* Social Links */}
-      <div className="social-links">
+      {/* Right Side - Information Card */}
+      <div className="info-card">
 
-        <a
-          href="https://github.com/ishqafathima"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="GitHub"
-        >
-          <FaGithub />
-        </a>
+        <div className="info-card-header">
+          <div className="profile-dot"></div>
+          <div>
+            <h3>Personal Details</h3>
+            <p>Get to know me</p>
+          </div>
+        </div>
 
-        <a
-          href="https://www.linkedin.com/in/ishqalafir/"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="LinkedIn"
-        >
-          <FaLinkedin />
-        </a>
+        <div className="info-list">
+
+          <div className="info-item">
+            <div className="info-icon">
+              <FaEnvelope />
+            </div>
+            <div>
+              <span>Email</span>
+              <p>ishqafathima34@gmail.com</p>
+            </div>
+          </div>
+
+          <div className="info-item">
+            <div className="info-icon">
+              <FaMapMarkerAlt />
+            </div>
+            <div>
+              <span>Location</span>
+              <p>Weligama, Matara, Sri Lanka</p>
+            </div>
+          </div>
+
+          <div className="info-item">
+            <div className="info-icon">
+              <FaPhone />
+            </div>
+            <div>
+              <span>Phone</span>
+              <p>+94 767607224</p>
+            </div>
+          </div>
+
+          <div className="info-item">
+            <div className="info-icon">
+              <FaBriefcase />
+            </div>
+            <div>
+              <span>Experience</span>
+              <p>Fresher – Seeking Internship</p>
+            </div>
+          </div>
+
+        </div>
 
       </div>
-
-      <button className="cv-button" onClick={downloadCV}>
-        Download CV
-      </button>
 
     </div>
-  );
+
+  </div>
+</section>
+
+);
 }
 
 export default About;
