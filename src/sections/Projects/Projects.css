@@ -257,14 +257,14 @@
 
 .primary-link {
   color: #ffffff;
-  background-color: #8e90a9;
-  border: 1px solid #8e90a9;
+  background-color: #04072a;
+  border: 1px solid #04072a;
 }
 
 .primary-link:hover {
   color: #ffffff;
-  background-color: #6f7190;
-  border-color: #6f7190;
+  background-color: #000000;
+  border-color: #000000;
   transform: translateY(-2px);
 }
 
@@ -319,7 +319,7 @@
 }
 
 .view-all-projects a:hover {
-  background-color: #6f7190;
+  background-color: #333443;
   border-color: #8e90a9;
   transform: translateY(-2px);
 }
