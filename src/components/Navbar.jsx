@@ -50,37 +50,37 @@ function Navbar() {
           </div>
 
           <a href="#home" onClick={closeMenu}>
-            <span>01</span>
+            
             Home
           </a>
 
           <a href="#about" onClick={closeMenu}>
-            <span>02</span>
+          
             About
           </a>
 
           <a href="#skills" onClick={closeMenu}>
-            <span>03</span>
+            
             Skills
           </a>
 
           <a href="#projects" onClick={closeMenu}>
-            <span>04</span>
+            
             Projects
           </a>
 
           <a href="#certifications" onClick={closeMenu}>
-            <span>05</span>
+         
             Certifications
           </a>
 
           <a href="#experience" onClick={closeMenu}>
-            <span>06</span>
+            
             Experience
           </a>
 
           <a href="#contact" onClick={closeMenu}>
-            <span>07</span>
+            
             Contact
           </a>
 
