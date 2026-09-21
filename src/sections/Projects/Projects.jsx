@@ -74,7 +74,7 @@ function Projects() {
 
             <article
               className="project-card"
-              key={project.number}
+              
             >
 
               {/* Project Image */}
@@ -86,7 +86,7 @@ function Projects() {
                 />
 
                 <span className="project-number">
-                  {project.number}
+                  
                 </span>
 
               </div>

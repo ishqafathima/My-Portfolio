@@ -1,192 +1,178 @@
 import "./Skills.css";
 
 import {
-SiReact,
-SiJavascript,
-SiTypescript,
-SiHtml5,
-SiCss,
-SiExpo,
-SiNodedotjs,
-SiExpress,
-SiSpringboot,
-SiMongodb,
-SiMysql,
-SiFirebase,
-SiGithub,
-SiPostman,
-SiFigma,
+  SiReact,
+  SiJavascript,
+  SiTypescript,
+  SiHtml5,
+  SiCss,
+  SiExpo,
+  SiNodedotjs,
+  SiExpress,
+  SiSpringboot,
+  SiMongodb,
+  SiMysql,
+  SiFirebase,
+  SiGithub,
+  SiPostman,
+  SiFigma,
 } from "react-icons/si";
 
 function Skills() {
-const technicalSkills = {
-"Frontend Development": [
-{ name: "React.js", icon: SiReact },
-{ name: "JavaScript", icon: SiJavascript },
-{ name: "TypeScript", icon: SiTypescript },
-{ name: "HTML", icon: SiHtml5 },
-{ name: "CSS", icon: SiCss },
-],
+  const technicalSkills = {
+    "Frontend Development": [
+      { name: "React.js", icon: SiReact },
+      { name: "JavaScript", icon: SiJavascript },
+      { name: "TypeScript", icon: SiTypescript },
+      { name: "HTML", icon: SiHtml5 },
+      { name: "CSS", icon: SiCss },
+    ],
 
+    "Mobile Development": [
+      { name: "React Native", icon: SiReact },
+      { name: "Expo", icon: SiExpo },
+    ],
 
-"Mobile Development": [
-  { name: "React Native", icon: SiReact },
-  { name: "Expo", icon: SiExpo },
-],
+    "Backend Development": [
+      { name: "Node.js", icon: SiNodedotjs },
+      { name: "Express.js", icon: SiExpress },
+      { name: "Spring Boot", icon: SiSpringboot },
+    ],
 
-"Backend Development": [
-  { name: "Node.js", icon: SiNodedotjs },
-  { name: "Express.js", icon: SiExpress },
-  { name: "Spring Boot", icon: SiSpringboot },
-],
+    "Database & Cloud": [
+      { name: "MongoDB", icon: SiMongodb },
+      { name: "MySQL", icon: SiMysql },
+      { name: "Firebase", icon: SiFirebase },
+    ],
 
-"Database & Cloud": [
-  { name: "MongoDB", icon: SiMongodb },
-  { name: "MySQL", icon: SiMysql },
-  { name: "Firebase", icon: SiFirebase },
-],
+    "Tools & Design": [
+      { name: "Git & GitHub", icon: SiGithub },
+      { name: "Postman", icon: SiPostman },
+      { name: "Figma", icon: SiFigma },
+      { name: "Axure", icon: null },
+    ],
+  };
 
-"Tools & Design": [
-  { name: "Git & GitHub", icon: SiGithub },
-  { name: "Postman", icon: SiPostman },
-  { name: "Figma", icon: SiFigma },
-  { name: "Axure", icon: null },
-],
+  const softSkills = [
+    "Communication",
+    "Teamwork",
+    "Problem Solving",
+    "Time Management",
+    "Adaptability",
+    "Quick Learning",
+  ];
 
+  return (
+    <section className="skills">
+      <div className="skills-container">
 
-};
+        {/* Section Heading */}
+        <div className="skills-heading">
+          <span className="section-label">MY EXPERTISE</span>
 
-const softSkills = [
-"Communication",
-"Teamwork",
-"Problem Solving",
-"Time Management",
-"Adaptability",
-"Quick Learning",
-];
+          <h2>Technical Skills</h2>
 
-return ( <section className="skills"> <div className="skills-container">
+          <p>
+            Technologies and tools I use to design, develop, and
+            build modern digital experiences.
+          </p>
 
+          <div className="heading-line"></div>
+        </div>
 
-    {/* Section Heading */}
-    <div className="skills-heading">
-      <span className="section-label">MY EXPERTISE</span>
+        {/* Technical Skills */}
+        <div className="technical-skills">
 
-      <h2>Technical Skills</h2>
+          {Object.entries(technicalSkills).map(
+            ([category, skills]) => (
 
-      <p>
-        Technologies and tools I use to design, develop, and
-        build modern digital experiences.
-      </p>
+              <div
+                className="skill-category"
+                key={category}
+              >
 
-      <div className="heading-line"></div>
-    </div>
+                {/* Category Header */}
+                <div className="category-header">
+                  <h3>{category}</h3>
+                </div>
 
+                {/* Skills List */}
+                <div className="skills-list">
 
-    {/* Technical Skills */}
-    <div className="technical-skills">
+                  {skills.map((skill) => {
 
-      {Object.entries(technicalSkills).map(
-        ([category, skills]) => (
+                    const Icon = skill.icon;
 
-          <div
-            className="skill-category"
-            key={category}
-          >
+                    return (
+                      <div
+                        className="skill-item"
+                        key={skill.name}
+                      >
 
-            <div className="category-header">
-              <span className="category-number">
-                {String(
-                  Object.keys(technicalSkills).indexOf(category) + 1
-                ).padStart(2, "0")}
-              </span>
+                        <div className="skill-icon">
 
-              <h3>{category}</h3>
-            </div>
+                          {Icon ? (
+                            <Icon />
+                          ) : (
+                            <span className="axure-icon">
+                              A
+                            </span>
+                          )}
 
-            <div className="skills-list">
+                        </div>
 
-              {skills.map((skill) => {
+                        <span>{skill.name}</span>
 
-                const Icon = skill.icon;
+                      </div>
+                    );
+                  })}
 
-                return (
-                  <div
-                    className="skill-item"
-                    key={skill.name}
-                  >
+                </div>
 
-                    <div className="skill-icon">
+              </div>
+            )
+          )}
 
-                      {Icon ? (
-                        <Icon />
-                      ) : (
-                        <span className="axure-icon">
-                          A
-                        </span>
-                      )}
+        </div>
 
-                    </div>
+        {/* Soft Skills */}
+        <div className="soft-skills-section">
 
-                    <span>{skill.name}</span>
+          <div className="soft-skills-heading">
 
-                  </div>
-                );
-              })}
+            <span className="section-label">
+              BEYOND TECHNICAL
+            </span>
 
-            </div>
+            <h2>Soft Skills</h2>
 
-          </div>
-        )
-      )}
-
-    </div>
-
-
-    {/* Soft Skills */}
-    <div className="soft-skills-section">
-
-      <div className="soft-skills-heading">
-
-        <span className="section-label">
-          BEYOND TECHNICAL
-        </span>
-
-        <h2>Soft Skills</h2>
-
-        <p>
-          Personal qualities that help me collaborate,
-          adapt, and solve problems effectively.
-        </p>
-
-      </div>
-
-
-      <div className="soft-skills-list">
-
-        {softSkills.map((skill) => (
-
-          <div
-            className="soft-skill-item"
-            key={skill}
-          >
-
-
-            <span>{skill}</span>
+            <p>
+              Personal qualities that help me collaborate,
+              adapt, and solve problems effectively.
+            </p>
 
           </div>
 
-        ))}
+          <div className="soft-skills-list">
+
+            {softSkills.map((skill) => (
+
+              <div
+                className="soft-skill-item"
+                key={skill}
+              >
+                <span>{skill}</span>
+              </div>
+
+            ))}
+
+          </div>
+
+        </div>
 
       </div>
-
-    </div>
-
-  </div>
-</section>
-
-
-);
+    </section>
+  );
 }
 
 export default Skills;
