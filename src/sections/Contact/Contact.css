@@ -322,33 +322,26 @@
 ========================= */
 
 .contact-form button {
-  display: flex;
-
+  display: inline-flex;
   align-items: center;
+  justify-content: center;
+  gap: 12px;
 
-  justify-content: space-between;
+  width: 150px;
+  min-height: 40px;
 
-  gap: 20px;
+  margin: 3px auto 0;
 
-  width: 100%;
-
-  min-height: 46px;
-
-  margin-top: 3px;
-
-  padding: 11px 15px;
+  padding: 9px 12px;
 
   border: 1px solid #04072a;
-
   border-radius: 7px;
 
   background-color: #04072a;
-
   color: #ffffff;
 
   font-family: inherit;
-
-  font-size: 13px;
+  font-size: 11px;
   font-weight: 700;
 
   cursor: pointer;
@@ -361,28 +354,23 @@
 
 .contact-form button:hover:not(:disabled) {
   transform: translateY(-2px);
-
   background-color: #000000;
-
   border-color: #000000;
 }
 
 .contact-form button:disabled {
   opacity: 0.65;
-
   cursor: not-allowed;
 }
 
 .send-arrow {
-  font-size: 17px;
-
+  font-size: 15px;
   transition: transform 0.3s ease;
 }
 
 .contact-form button:hover:not(:disabled) .send-arrow {
   transform: translate(2px, -2px);
 }
-
 /* =========================
    STATUS
 ========================= */
