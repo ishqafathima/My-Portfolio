@@ -3,7 +3,6 @@ import "./Projects.css";
 function Projects() {
   const projects = [
     {
-      
       title: "MyUniPal",
       image: "/MyUnipal.jpeg",
       description:
@@ -16,7 +15,6 @@ function Projects() {
     },
 
     {
-      
       title: "AI Study Planner",
       image: "/AI Study Planner.png",
       description:
@@ -27,7 +25,6 @@ function Projects() {
     },
 
     {
-      
       title: "Portfolio Website",
       image: "/Portfolio.png",
       description:
@@ -74,7 +71,7 @@ function Projects() {
 
             <article
               className="project-card"
-              
+              key={project.title}
             >
 
               {/* Project Image */}
@@ -84,10 +81,6 @@ function Projects() {
                   src={project.image}
                   alt={`${project.title} project`}
                 />
-
-                <span className="project-number">
-                  
-                </span>
 
               </div>
 
