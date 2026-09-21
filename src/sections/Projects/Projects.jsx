@@ -5,6 +5,7 @@ function Projects() {
   const projects = [
     {
       title: "MyUniPal",
+      image: "/MyUniPal.png",
       description:
         "A university community and student support application designed to help students connect, share information, and access useful resources.",
       technologies: ["React Native", "Node.js", "Firebase"],
@@ -14,6 +15,7 @@ function Projects() {
     },
     {
       title: "AI Study Planner",
+      image: "/AI-Study-Planner.png",
       description:
         "An AI-powered study planning application that helps students organize their study schedules and manage their learning activities.",
       technologies: ["React.js", "Spring Boot", "AI"],
@@ -21,9 +23,17 @@ function Projects() {
     },
     {
       title: "Portfolio Website",
+      image: "/Portfolio.png",
       description:
         "A modern, responsive portfolio showcasing my skills, projects, certifications, and experience as a Full-Stack Developer and UI/UX Designer, with an integrated contact form and email functionality.",
-      technologies: ["React.js", "JavaScript", "CSS","Spring Boot","MongoDB Atlas","Resend"],
+      technologies: [
+        "React.js",
+        "JavaScript",
+        "CSS",
+        "Spring Boot",
+        "MongoDB Atlas",
+        "Resend",
+      ],
       github: "https://github.com/ishqafathima/My-Portfolio",
     },
   ];
@@ -39,11 +49,16 @@ function Projects() {
         </p>
 
         <div className="projects-grid">
+
           {projects.map((project, index) => (
             <div className="project-card" key={index}>
 
+              {/* Project Image */}
               <div className="project-image">
-                <span>Project {index + 1}</span>
+                <img
+                  src={project.image}
+                  alt={`${project.title} project`}
+                />
               </div>
 
               <div className="project-info">
@@ -88,6 +103,7 @@ function Projects() {
 
             </div>
           ))}
+
         </div>
 
         <div className="view-all-projects">
