@@ -22,7 +22,7 @@ function Projects() {
     {
       title: "Portfolio Website",
       description:
-        "A responsive personal portfolio website showcasing my skills, projects, certifications, and experience as a Full-Stack Developer and UI/UX Designer. It includes a contact form with email functionality that allows visitors to send messages directly through the website.",
+        "A modern, responsive portfolio showcasing my skills, projects, certifications, and experience as a Full-Stack Developer and UI/UX Designer, with an integrated contact form and email functionality.",
       technologies: ["React.js", "JavaScript", "CSS","Spring Boot","MongoDB Atlas","Resend"],
       github: "https://github.com/ishqafathima/My-Portfolio",
     },
