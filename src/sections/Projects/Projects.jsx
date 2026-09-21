@@ -15,7 +15,7 @@ function Projects() {
     },
     {
       title: "AI Study Planner",
-      image: "/AI-Study-Planner.png",
+      image: "/AI Study Planner.png",
       description:
         "An AI-powered study planning application that helps students organize their study schedules and manage their learning activities.",
       technologies: ["React.js", "Spring Boot", "AI"],
