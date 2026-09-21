@@ -1,24 +1,24 @@
-
 import "./Home.css";
 
 function Home() {
   return (
     <section className="home">
-
       <div className="home-content">
 
+        {/* LEFT CONTENT */}
         <div className="intro">
+
+          <span className="home-label">WELCOME TO MY PORTFOLIO</span>
 
           <p className="hello">Hello, I'm</p>
 
-          <h1 className="name">
-            Fathima Ishka
-          </h1>
+          <h1 className="name">Fathima Ishka</h1>
 
           <h2 className="role">
-            <span>IT Undergraduate</span> |{" "}
-            <span>Full-stack Developer</span> |{" "}
-            <span>Mobile Application Developer</span> |{" "}
+            <span>Full-stack Developer</span>
+            <span className="separator">|</span>
+            <span>Mobile Application Developer</span>
+            <span className="separator">|</span>
             <span>UI/UX Designer</span>
           </h2>
 
@@ -28,7 +28,6 @@ function Home() {
           </p>
 
           <div className="home-buttons">
-
             <button
               className="work-btn"
               onClick={() =>
@@ -37,7 +36,8 @@ function Home() {
                 })
               }
             >
-              View My Work
+              <span>View My Work</span>
+              <span className="button-arrow">↗</span>
             </button>
 
             <button
@@ -50,21 +50,39 @@ function Home() {
             >
               Contact Me
             </button>
+          </div>
+
+          <div className="home-meta">
+            <span>01</span>
+            <div></div>
+            <span>IT • DEVELOPMENT • DESIGN</span>
+          </div>
+
+        </div>
+
+        {/* RIGHT PROFILE */}
+        <div className="profile">
+
+          <div className="profile-frame">
+
+            <div className="profile-number">01 / 01</div>
+
+            <img
+              src="/Ishqa.jpeg"
+              alt="Fathima Ishka"
+              className="profile-image"
+            />
+
+            <div className="profile-caption">
+              <span>FATHIMA ISHKA</span>
+              <span>DEVELOPER & DESIGNER</span>
+            </div>
 
           </div>
 
         </div>
 
-        <div className="profile">
-          <img
-            src="/Ishqa.jpeg"
-            alt="Ishka Lafir"
-            className="profile-image"
-          />
-        </div>
-
       </div>
-
     </section>
   );
 }

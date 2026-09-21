@@ -1,15 +1,13 @@
-
 /* =========================
    HOME
 ========================= */
 
 .home {
   min-height: calc(100vh - 70px);
-
   display: flex;
   align-items: center;
 
-  padding: 60px 10%;
+  padding: 80px 8%;
 
   background-color: #04072a;
 
@@ -23,15 +21,16 @@
 
 .home-content {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1150px;
 
   margin: 0 auto;
 
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
 
-  gap: 60px;
+  align-items: center;
+
+  gap: 80px;
 }
 
 
@@ -40,50 +39,108 @@
 ========================= */
 
 .intro {
-  flex: 1;
   min-width: 0;
 }
 
-.hello {
-  font-size: 20px;
+.home-label {
+  display: inline-block;
 
-  margin: 0 0 5px;
+  margin-bottom: 25px;
 
-  color: #ffffff;
+  color: #8e90a9;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 3px;
 }
+
+
+/* =========================
+   HELLO
+========================= */
+
+.hello {
+  margin: 0 0 6px;
+
+  color: #aeb5c8;
+
+  font-size: 17px;
+  font-weight: 400;
+}
+
+
+/* =========================
+   NAME
+========================= */
 
 .name {
-  font-size: clamp(38px, 5vw, 52px);
-
-  margin: 0 0 15px;
-
-  color: #dff4ff;
-
-  font-weight: 700;
-}
-
-.role {
-  font-size: clamp(16px, 2vw, 20px);
-
-  line-height: 1.8;
-
   margin: 0;
 
   color: #ffffff;
 
-  font-weight: 600;
+  font-size: clamp(45px, 6vw, 70px);
+
+  font-weight: 700;
+
+  line-height: 1.05;
+
+  letter-spacing: -2px;
 }
 
-.description {
-  max-width: 650px;
 
-  margin-top: 25px;
+/* =========================
+   ROLE
+========================= */
 
-  font-size: 16px;
+.role {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  align-items: center;
+
+  gap: 9px;
+
+  margin: 22px 0 0;
+
+  color: #d9deed;
+
+  font-size: 17px;
+
+  font-weight: 500;
 
   line-height: 1.7;
+}
 
-  color: #ffffff;
+.role span:not(.separator) {
+  transition: color 0.3s ease;
+}
+
+.role span:not(.separator):hover {
+  color: #8e90a9;
+}
+
+.separator {
+  color: #8e90a9;
+  font-weight: 400;
+}
+
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.description {
+  max-width: 620px;
+
+  margin: 24px 0 0;
+
+  color: #aeb5c8;
+
+  font-size: 15px;
+
+  line-height: 1.8;
 }
 
 
@@ -94,43 +151,118 @@
 .home-buttons {
   display: flex;
 
-  gap: 15px;
+  align-items: center;
 
-  margin-top: 25px;
+  gap: 13px;
+
+  margin-top: 30px;
 
   flex-wrap: wrap;
 }
 
 .home-buttons button {
-  padding: 11px 22px;
+  min-height: 44px;
+
+  padding: 10px 18px;
 
   border-radius: 7px;
 
-  font-size: 15px;
+  font-family: inherit;
+
+  font-size: 13px;
+
+  font-weight: 600;
 
   cursor: pointer;
 
-  transition: 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease,
+    border-color 0.3s ease;
 }
 
-.work-btn {
-  border: none;
 
-  background-color: #dff4ff;
+/* Primary button */
+
+.work-btn {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  border: 1px solid #d9deed;
+
+  background-color: #d9deed;
 
   color: #04072a;
 }
 
-.contact-btn {
-  background-color: transparent;
+.work-btn:hover {
+  transform: translateY(-3px);
 
-  border: 1px solid #dff4ff;
+  background-color: #ffffff;
+
+  border-color: #ffffff;
+}
+
+.button-arrow {
+  font-size: 16px;
+
+  transition: transform 0.3s ease;
+}
+
+.work-btn:hover .button-arrow {
+  transform: translate(2px, -2px);
+}
+
+
+/* Secondary button */
+
+.contact-btn {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  background-color: transparent;
 
   color: #ffffff;
 }
 
-.home-buttons button:hover {
-  transform: translateY(-2px);
+.contact-btn:hover {
+  transform: translateY(-3px);
+
+  background-color: rgba(142, 144, 169, 0.12);
+
+  border-color: #8e90a9;
+}
+
+
+/* =========================
+   META
+========================= */
+
+.home-meta {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-top: 45px;
+
+  color: #68708e;
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+.home-meta div {
+  width: 45px;
+  height: 1px;
+
+  background-color: #343a5a;
 }
 
 
@@ -139,8 +271,6 @@
 ========================= */
 
 .profile {
-  flex: 0 0 330px;
-
   display: flex;
 
   justify-content: center;
@@ -150,54 +280,122 @@
 
 
 /* =========================
-   COLORFUL PROFILE IMAGE
+   PROFILE FRAME
 ========================= */
 
-.profile-image {
-  width: 280px;
-  height: 280px;
+.profile-frame {
+  position: relative;
 
-  object-fit: cover;
+  width: 330px;
 
-  border-radius: 50%;
+  padding: 22px;
 
-  /* Colorful gradient ring */
-  border: 6px solid transparent;
+  box-sizing: border-box;
 
-  background:
-    linear-gradient(#04072a, #04072a) padding-box,
-    linear-gradient(
-      135deg,
-     #dff4ff, 
-     #c4b5fd, 
-     #fbcfe8, 
-     #fde68a,
-     #dff4ff
-    ) border-box;
+  background-color: rgba(255, 255, 255, 0.025);
 
-  /* Colorful glow */
-  box-shadow:
-    0 0 18px rgba(223, 244, 255, 0.45), 
-    0 0 35px rgba(196, 181, 253, 0.30), 
-    0 0 50px rgba(251, 207, 232, 0.20);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  border-radius: 14px;
 
   transition:
     transform 0.4s ease,
+    border-color 0.4s ease,
     box-shadow 0.4s ease;
+}
+
+.profile-frame:hover {
+  transform: translateY(-6px);
+
+  border-color: rgba(142, 144, 169, 0.5);
+
+  box-shadow:
+    0 20px 45px rgba(0, 0, 0, 0.25);
 }
 
 
 /* =========================
-   PROFILE HOVER
+   PROFILE NUMBER
 ========================= */
 
-.profile-image:hover {
-  transform: scale(1.05);
+.profile-number {
+  margin-bottom: 15px;
 
-  box-shadow:
-  0 0 22px rgba(223, 244, 255, 0.55), 
-  0 0 42px rgba(196, 181, 253, 0.40), 
-  0 0 60px rgba(251, 207, 232, 0.30);
+  color: #8e90a9;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  text-align: right;
+}
+
+
+/* =========================
+   PROFILE IMAGE
+========================= */
+
+.profile-image {
+  display: block;
+
+  width: 100%;
+  aspect-ratio: 1 / 1;
+
+  object-fit: cover;
+
+  border-radius: 10px;
+
+  filter: saturate(0.95);
+
+  transition:
+    transform 0.4s ease,
+    filter 0.4s ease;
+}
+
+.profile-frame:hover .profile-image {
+  transform: scale(1.02);
+
+  filter: saturate(1.05);
+}
+
+
+/* =========================
+   PROFILE CAPTION
+========================= */
+
+.profile-caption {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 10px;
+
+  padding-top: 17px;
+}
+
+.profile-caption span:first-child {
+  color: #ffffff;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+}
+
+.profile-caption span:last-child {
+  color: #8e90a9;
+
+  font-size: 8px;
+
+  font-weight: 600;
+
+  letter-spacing: 1px;
+
+  text-align: right;
 }
 
 
@@ -205,29 +403,30 @@
    TABLET
 ========================= */
 
-@media (max-width: 900px) {
+@media (max-width: 950px) {
 
   .home {
-    min-height: calc(100vh - 65px);
-
-    padding: 60px 7%;
+    padding: 70px 7%;
   }
 
   .home-content {
-    gap: 35px;
+    gap: 50px;
   }
 
-  .profile {
-    flex: 0 0 250px;
+  .name {
+    font-size: clamp(42px, 6vw, 58px);
   }
 
-  .profile-image {
-    width: 230px;
-    height: 230px;
+  .role {
+    font-size: 15px;
   }
 
   .description {
-    font-size: 15px;
+    font-size: 14px;
+  }
+
+  .profile-frame {
+    width: 290px;
   }
 }
 
@@ -241,75 +440,81 @@
   .home {
     min-height: calc(100vh - 60px);
 
-    padding: 50px 6%;
+    padding: 65px 6% 75px;
   }
 
   .home-content {
-    flex-direction: column-reverse;
+    grid-template-columns: 1fr;
 
-    justify-content: center;
+    gap: 40px;
 
     text-align: center;
-
-    gap: 30px;
   }
 
   .intro {
-    width: 100%;
+    order: 2;
+  }
+
+  .profile {
+    order: 1;
+  }
+
+  .home-label {
+    margin-bottom: 18px;
+
+    font-size: 10px;
+
+    letter-spacing: 2.5px;
   }
 
   .hello {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .name {
-    font-size: 40px;
+    font-size: 42px;
 
-    margin-bottom: 12px;
+    letter-spacing: -1.5px;
   }
 
   .role {
-    font-size: 16px;
+    justify-content: center;
 
-    line-height: 1.7;
+    font-size: 14px;
+
+    line-height: 1.8;
   }
 
   .description {
-    max-width: 100%;
+    max-width: 520px;
 
     margin: 20px auto 0;
 
-    font-size: 15px;
+    font-size: 14px;
 
-    line-height: 1.6;
+    line-height: 1.7;
   }
 
   .home-buttons {
     justify-content: center;
 
-    gap: 12px;
+    margin-top: 25px;
   }
 
-  .home-buttons button {
-    padding: 10px 18px;
+  .home-meta {
+    justify-content: center;
 
-    font-size: 14px;
+    margin-top: 35px;
   }
 
+  .profile-frame {
+    width: 260px;
 
-  /* Mobile profile */
-
-  .profile {
-    flex: none;
-
-    width: 100%;
+    padding: 17px;
   }
 
-  .profile-image {
-    width: 210px;
-    height: 210px;
-
-    border-width: 5px;
+  .profile-number {
+    margin-bottom: 12px;
   }
 }
 
@@ -321,15 +526,21 @@
 @media (max-width: 480px) {
 
   .home {
-    padding: 40px 5%;
+    padding: 50px 5% 65px;
   }
 
   .home-content {
-    gap: 25px;
+    gap: 32px;
+  }
+
+  .profile-frame {
+    width: 220px;
+
+    padding: 14px;
   }
 
   .hello {
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .name {
@@ -337,43 +548,51 @@
   }
 
   .role {
-    font-size: 14px;
+    gap: 6px;
 
-    line-height: 1.8;
+    font-size: 12px;
+
+    line-height: 1.9;
   }
 
   .description {
-    font-size: 14px;
+    font-size: 13px;
 
-    line-height: 1.6;
-
-    margin-top: 18px;
+    line-height: 1.7;
   }
 
   .home-buttons {
     flex-direction: column;
 
-    align-items: center;
-
     width: 100%;
+
+    gap: 10px;
   }
 
   .home-buttons button {
-    width: 180px;
+    width: 190px;
+
+    justify-content: center;
   }
 
+  .home-meta {
+    gap: 8px;
 
-  /* Small phone profile */
+    font-size: 8px;
 
-  .profile-image {
-    width: 180px;
-    height: 180px;
+    letter-spacing: 1.5px;
+  }
 
-    border-width: 4px;
+  .home-meta div {
+    width: 30px;
+  }
 
-    box-shadow:
-      0 0 15px rgba(0, 245, 255, 0.35),
-      0 0 30px rgba(124, 58, 237, 0.25);
+  .profile-caption span:first-child {
+    font-size: 8px;
+  }
+
+  .profile-caption span:last-child {
+    font-size: 7px;
   }
 }
 
@@ -384,24 +603,27 @@
 
 @media (max-width: 360px) {
 
-  .profile-image {
-    width: 155px;
-    height: 155px;
+  .home {
+    padding: 45px 5% 60px;
+  }
+
+  .profile-frame {
+    width: 190px;
   }
 
   .name {
-    font-size: 31px;
+    font-size: 30px;
   }
 
   .role {
-    font-size: 13px;
+    font-size: 11px;
   }
 
   .description {
-    font-size: 13px;
+    font-size: 12px;
   }
 
   .home-buttons button {
-    width: 170px;
+    width: 175px;
   }
 }
