@@ -319,7 +319,7 @@
 }
 
 .view-all-projects a:hover {
-  background-color: rgba(142, 144, 169, 0.12);
+  background-color: #6f7190;
   border-color: #8e90a9;
   transform: translateY(-2px);
 }
