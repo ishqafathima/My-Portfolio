@@ -37,8 +37,13 @@ function Projects() {
         "MongoDB Atlas",
         "Resend",
       ],
-      github:
+
+      frontend:
         "https://github.com/ishqafathima/My-Portfolio",
+
+      backend:
+        "https://github.com/ishqafathima/Portfolio-Backend",
+
     },
   ];
 
@@ -111,16 +116,46 @@ function Projects() {
                 {/* Buttons */}
                 <div className="project-buttons">
 
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="project-link primary-link"
-                  >
-                    GitHub
-                    <span>↗</span>
-                  </a>
+                  {/* Portfolio Frontend */}
+                  {project.frontend && (
+                    <a
+                      href={project.frontend}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project-link primary-link"
+                    >
+                      Frontend
+                      <span>↗</span>
+                    </a>
+                  )}
 
+                  {/* Portfolio Backend */}
+                  {project.backend && (
+                    <a
+                      href={project.backend}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project-link secondary-link"
+                    >
+                      Backend
+                      <span>↗</span>
+                    </a>
+                  )}
+
+                  {/* Normal GitHub */}
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project-link primary-link"
+                    >
+                      GitHub
+                      <span>↗</span>
+                    </a>
+                  )}
+
+                  {/* Figma */}
                   {project.figma && (
                     <a
                       href={project.figma}
