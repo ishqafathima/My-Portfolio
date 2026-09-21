@@ -150,7 +150,7 @@
 
 
 /* =========================
-   PROFILE IMAGE
+   COLORFUL PROFILE IMAGE
 ========================= */
 
 .profile-image {
@@ -161,21 +161,25 @@
 
   border-radius: 50%;
 
-  /* Gradient ring */
-  border: 5px solid transparent;
+  /* Colorful gradient ring */
+  border: 6px solid transparent;
 
   background:
     linear-gradient(#04072a, #04072a) padding-box,
     linear-gradient(
       135deg,
-      #dff4ff,
-      #7dd3fc,
-      #ffffff
+      #00f5ff,
+      #7c3aed,
+      #ff4ecd,
+      #ff8a00,
+      #00f5ff
     ) border-box;
 
-  /* Soft glow */
+  /* Colorful glow */
   box-shadow:
-    0 0 25px rgba(125, 211, 252, 0.25);
+    0 0 20px rgba(0, 245, 255, 0.35),
+    0 0 40px rgba(124, 58, 237, 0.25),
+    0 0 60px rgba(255, 78, 205, 0.18);
 
   transition:
     transform 0.4s ease,
@@ -188,10 +192,12 @@
 ========================= */
 
 .profile-image:hover {
-  transform: scale(1.04);
+  transform: scale(1.05);
 
   box-shadow:
-    0 0 30px rgba(125, 211, 252, 0.4);
+    0 0 25px rgba(0, 245, 255, 0.5),
+    0 0 50px rgba(124, 58, 237, 0.4),
+    0 0 75px rgba(255, 78, 205, 0.3);
 }
 
 
@@ -366,7 +372,8 @@
     border-width: 4px;
 
     box-shadow:
-      0 0 18px rgba(125, 211, 252, 0.25);
+      0 0 15px rgba(0, 245, 255, 0.35),
+      0 0 30px rgba(124, 58, 237, 0.25);
   }
 }
 
