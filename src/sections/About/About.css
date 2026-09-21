@@ -222,7 +222,7 @@ box-sizing: border-box;
 
 padding: 30px;
 
-background-color: #bdc3ca;
+background-color: rgba(255, 255, 255, 0.035);
 
 border: 1px solid rgba(255, 255, 255, 0.12);
 
