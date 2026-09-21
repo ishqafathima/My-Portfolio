@@ -2,7 +2,7 @@ import "./Home.css";
 
 function Home() {
   return (
-    <section className="home">
+    <section className="home" id="home">
       <div className="home-content">
 
         {/* LEFT CONTENT */}
@@ -28,6 +28,7 @@ function Home() {
           </p>
 
           <div className="home-buttons">
+
             <button
               className="work-btn"
               onClick={() =>
@@ -50,12 +51,7 @@ function Home() {
             >
               Contact Me
             </button>
-          </div>
 
-          <div className="home-meta">
-            <span>01</span>
-            <div></div>
-            <span>IT • DEVELOPMENT • DESIGN</span>
           </div>
 
         </div>
@@ -64,8 +60,6 @@ function Home() {
         <div className="profile">
 
           <div className="profile-frame">
-
-            <div className="profile-number">01 / 01</div>
 
             <img
               src="/Ishqa.jpeg"
